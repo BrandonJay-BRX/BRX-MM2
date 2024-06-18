@@ -2117,7 +2117,7 @@ local function RRLK_fake_script() -- Fake Script: StarterGui.BRX.Init
 	_G.Modules = {}
 	
 	--require(script.Parent.FUNCTIONS).notification("Thanks for using BRX! To use this hub, triple-click/tap the top region of your screen.")
-	require(script.Parent.FUNCTIONS).notification("v1.13.2/n- New Logo!/n- Tool Adjusted\n- Bugfixes and improvements to systems")
+	require(script.Parent.FUNCTIONS).notification("v1.13.2/n- [Adjusted] Throw Knife to (75m to 100m) Use it at your own risk. ⚠️ \n- Bugfixes and improvements to systems")
 	
 	
 	local menudrag = require(script.Parent.DraggableObject).new(script.Parent.Menu)
@@ -3374,6 +3374,40 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
 })
 
 
+table.insert(module, {
+		Type = "Button",
+		Args = {"Teleport to dropped gun", function(Self)
+			if not workspace:FindFirstChild("GunDrop") then fu.notification("No dropped gun to be teleported to.") return end
+			local previousPosition = localplayer.Character:GetPivot().Position
+			localplayer.Character:MoveTo(workspace:FindFirstChild("GunDrop").Position)
+			task.wait(.1)
+			localplayer.Character:MoveTo(previousPosition)
+			--fu.notification("Attempting a pathfind to gun..")
+	
+			--local pathToGun = phs:CreatePath({
+			--	AgentRadius = 5,
+			--	AgentHeight = localplayer.Character:GetExtentsSize().Y,
+			--	AgentCanJump = true
+			--})
+			--local completed, err = pcall(function()
+			--	pathToGun:ComputeAsync(localplayer.Character.PrimaryPart.Position, Vector3.new(workspace:FindFirstChild("GunDrop"):GetPivot().X, workspace:FindFirstChild("GunDrop"):GetPivot().Y, workspace:FindFirstChild("GunDrop"):GetPivot().Z))
+			--end)
+	
+			--if completed and pathToGun.Status == Enum.PathStatus.Success then
+			--	fu.notification("Found a path. Moving.")
+			--	for _, waypoint in pathToGun:GetWaypoints() do
+			--		task.wait(0.05)
+			--		game:GetService("TweenService"):Create(localplayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(0.05, Enum.EasingStyle.Linear), {
+			--			CFrame = CFrame.new(waypoint.Position + Vector3.new(0, 3, 0))	
+			--		}):Play()
+			--	end
+			--else
+			--	fu.notification("Couldn't find a proper path to gun. Try moving a little closer to the gun.")
+			--end
+		end,}
+})	
+		
+		
 	table.insert(module, {
 		Type = "Input",
 		Args = {"Shoot position offset", "Set", function(Self, text)
@@ -3465,7 +3499,7 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
 	
 	table.insert(module, {
     Type = "Button",
-    Args = {"Throw knife to 1-75 meters player distance (DETECTABLE)", function(Self)
+    Args = {"Throw knife to 1-100 meters player distance (<font color='#FF0000'>DETECTABLE</font> + <font color='#FF0000'>OP</font>)", function(Self)
         if findMurderer() ~= localplayer then 
             fu.notification("You're not the murderer.") 
             return 
@@ -3495,7 +3529,7 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
 
         local playerPosition = localplayer.Character:FindFirstChild("HumanoidRootPart").Position
         local playerDistance = (playerPosition - closestPlayerHRP.Position).magnitude
-        local throwDistance = 75 -- Change this to the desired throw distance in meters
+        local throwDistance = 100 -- Change this to the desired throw distance in meters
 
         if playerDistance > throwDistance then
             fu.notification("Player is too far to throw at.")
@@ -3512,40 +3546,7 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
         localplayer.Character.Knife.Throw:FireServer(unpack(args))
     end,}
 })
-    
-    
-	table.insert(module, {
-		Type = "Button",
-		Args = {"Teleport to dropped gun", function(Self)
-			if not workspace:FindFirstChild("GunDrop") then fu.notification("No dropped gun to be teleported to.") return end
-			local previousPosition = localplayer.Character:GetPivot().Position
-			localplayer.Character:MoveTo(workspace:FindFirstChild("GunDrop").Position)
-			task.wait(.1)
-			localplayer.Character:MoveTo(previousPosition)
-			--fu.notification("Attempting a pathfind to gun..")
-	
-			--local pathToGun = phs:CreatePath({
-			--	AgentRadius = 5,
-			--	AgentHeight = localplayer.Character:GetExtentsSize().Y,
-			--	AgentCanJump = true
-			--})
-			--local completed, err = pcall(function()
-			--	pathToGun:ComputeAsync(localplayer.Character.PrimaryPart.Position, Vector3.new(workspace:FindFirstChild("GunDrop"):GetPivot().X, workspace:FindFirstChild("GunDrop"):GetPivot().Y, workspace:FindFirstChild("GunDrop"):GetPivot().Z))
-			--end)
-	
-			--if completed and pathToGun.Status == Enum.PathStatus.Success then
-			--	fu.notification("Found a path. Moving.")
-			--	for _, waypoint in pathToGun:GetWaypoints() do
-			--		task.wait(0.05)
-			--		game:GetService("TweenService"):Create(localplayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(0.05, Enum.EasingStyle.Linear), {
-			--			CFrame = CFrame.new(waypoint.Position + Vector3.new(0, 3, 0))	
-			--		}):Play()
-			--	end
-			--else
-			--	fu.notification("Couldn't find a proper path to gun. Try moving a little closer to the gun.")
-			--end
-		end,}
-	})
+
 	
 	table.insert(module, {
 		Type = "Button",
