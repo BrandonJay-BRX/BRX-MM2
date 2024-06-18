@@ -3499,7 +3499,7 @@ table.insert(module, {
 	
 	table.insert(module, {
     Type = "Button",
-    Args = {"Throw knife to 1-100 meters player distance <font color='#FF0000'>(DETECTABLE + OP)</font>", function(Self)
+    Args = {"Throw knife to player distance of 1-100 meters. (DETECTABLE BUT OP ⚠️)</font>", function(Self)
         if findMurderer() ~= localplayer then 
             fu.notification("You're not the murderer.") 
             return 
