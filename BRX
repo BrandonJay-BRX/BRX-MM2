@@ -1,4 +1,4 @@
--- YARHM By Imperial and BRX By Brandon Jay, v1.13.2
+-- YARHM By Imperial and BRX By Brandon Jay, v1.13.3
 
 -- Instances:
 
@@ -2117,7 +2117,7 @@ local function RRLK_fake_script() -- Fake Script: StarterGui.BRX.Init
 	_G.Modules = {}
 	
 	--require(script.Parent.FUNCTIONS).notification("Thanks for using BRX! To use this hub, triple-click/tap the top region of your screen.")
-	require(script.Parent.FUNCTIONS).notification("v1.13.2/n- [Adjusted] Throw Knife to (75m to 100m) Use it at your own risk. ⚠️ \n- Bugfixes and improvements to systems")
+	require(script.Parent.FUNCTIONS).notification("v1.13.3/n- [Adjusted] Throw Knife to (75m to 100m) Use it at your own risk. ⚠️ \n- Bugfixes and improvements to systems")
 	
 	
 	local menudrag = require(script.Parent.DraggableObject).new(script.Parent.Menu)
@@ -3499,7 +3499,7 @@ table.insert(module, {
 	
 	table.insert(module, {
     Type = "Button",
-    Args = {"Throw knife to 1-100 meters player distance (<font color='#FF0000'>DETECTABLE</font> + <font color='#FF0000'>OP</font>)", function(Self)
+    Args = {"Throw knife to 1-100 meters player distance <font color='#FF0000'>(DETECTABLE + OP)</font>", function(Self)
         if findMurderer() ~= localplayer then 
             fu.notification("You're not the murderer.") 
             return 
