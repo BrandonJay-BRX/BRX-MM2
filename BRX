@@ -3292,7 +3292,7 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
 	table.insert(module, {
 		Type = "Button",
 		Args = {"Shoot murderer", function(Self)
-		fu.notification("Follow (brx12k) in Tiktok!") -- Notification added here
+		fu.notification("Follow (brx12k) on Tiktok!") -- Notification added here
 		
 			if findSheriff() ~= localplayer then 
 				fu.notification("You're not sheriff/hero.") 
@@ -3336,7 +3336,7 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
 	table.insert(module, {
 		Type = "Button",
 		Args = {"Throw knife to closest player", function(Self)
-		fu.notification("Follow (brx12k) in Tiktok!") -- Notification added here
+		fu.notification("Follow (brx12k) on Tiktok!") -- Notification added here
 		
 			if findMurderer() ~= localplayer then 
 				fu.notification("You're not murderer.") 
@@ -3381,7 +3381,7 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
 	table.insert(module, {
     Type = "Button",
     Args = {"Throw knife to player distance of 1-150 meters. (OP!)", function(Self)
-        fu.notification("Follow (brx12k) in Tiktok!") -- Notification added here
+        fu.notification("Follow (brx12k) on Tiktok!") -- Notification added here
 
         if findMurderer() ~= localplayer then 
             fu.notification("You're not the murderer.") 
@@ -3523,6 +3523,8 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
 	table.insert(module, {
 		Type = "Button",
 		Args = {"Teleport to dropped gun", function(Self)
+		fu.notification("Follow (brx12k) on Tiktok!") -- Notification added here
+		
 			if not workspace:FindFirstChild("GunDrop") then fu.notification("No dropped gun to be teleported to.") return end
 			local previousPosition = localplayer.Character:GetPivot().Position
 			localplayer.Character:MoveTo(workspace:FindFirstChild("GunDrop").Position)
@@ -3557,7 +3559,7 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
 	table.insert(module, {
 		Type = "Button",
 		Args = {"God mode (Very, VERY UNSTABLE)", function(Self) -- Credits to EdgeIY, Infinite Yield
-		fu.notification("Follow (brx12k) in Tiktok!") -- Notification added here
+		fu.notification("Follow (brx12k) on Tiktok!") -- Notification added here
 		
 			local Cam = workspace.CurrentCamera
 			local Pos, Char = Cam.CFrame, localplayer.Character
@@ -3584,7 +3586,7 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
 	table.insert(module, {
 		Type = "Button",
 		Args = {"Kill murderer immediately (DETECTABLE)", function()
-		fu.notification("Follow (brx12k) in Tiktok!") -- Notification added here
+		fu.notification("Follow (brx12k) on Tiktok!") -- Notification added here
 		
 			if findSheriff() ~= localplayer then fu.notification("You're not sheriff/hero.") return end
 			if not findMurderer() then
@@ -3645,7 +3647,7 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
 	table.insert(module, {
 		Type = "Button",
 		Args = {"Kill closest player as murderer (DETECTABLE)", function()
-		fu.notification("Follow (brx12k) in Tiktok!") -- Notification added here
+		fu.notification("Follow (brx12k) on Tiktok!") -- Notification added here
 		
 			if findMurderer() ~= localplayer then fu.notification("You're not murderer.") return end
 	
