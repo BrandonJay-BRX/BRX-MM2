@@ -657,10 +657,10 @@ Converted["_UICorner13"].Parent = Converted["_Close"]
 Converted["_UIStroke9"].Parent = Converted["_Close"]
 
 Converted["_HubCredits"].Font = Enum.Font.GothamBold
-Converted["_HubCredits"].Text = "Credits to Imperial | Edited By Brandon Jay"
+Converted["_HubCredits"].Text = "YARHM By Imperial or Joysticks| BRX By Brandon Jay On FB and Throw knife to givepetroblox."
 Converted["_HubCredits"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_HubCredits"].TextScaled = true
-Converted["_HubCredits"].TextSize = 14
+Converted["_HubCredits"].TextSize = 9
 Converted["_HubCredits"].TextTransparency = 0.699999988079071
 Converted["_HubCredits"].TextWrapped = true
 Converted["_HubCredits"].TextXAlignment = Enum.TextXAlignment.Right
@@ -3292,9 +3292,8 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
 	table.insert(module, {
 		Type = "Button",
 		Args = {"Shoot murderer", function(Self)
-		fu.notification("Follow (brx12k) on Tiktok!") -- Notification added here
-		
 			if findSheriff() ~= localplayer then 
+			    fu.notification("Follow (brx12k) on Tiktok!") -- Notification added here
 				fu.notification("You're not sheriff/hero.") 
 				return 
 			end
@@ -3336,9 +3335,8 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
 	table.insert(module, {
 		Type = "Button",
 		Args = {"Throw knife to closest player", function(Self)
-		fu.notification("Follow (brx12k) on Tiktok!") -- Notification added here
-		
 			if findMurderer() ~= localplayer then 
+			    fu.notification("Follow (brx12k) on Tiktok!") -- Notification added here
 				fu.notification("You're not murderer.") 
 				return 
 			end
@@ -3381,9 +3379,8 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
 	table.insert(module, {
     Type = "Button",
     Args = {"Throw knife to player distance of 1-150 meters. (OP!)", function(Self)
-        fu.notification("Follow (brx12k) on Tiktok!") -- Notification added here
-
-        if findMurderer() ~= localplayer then 
+        if findMurderer() ~= localplayer then
+             fu.notification("Follow (brx12k) on Tiktok!") -- Notification added here
             fu.notification("You're not the murderer.") 
             return 
         end
@@ -3412,7 +3409,7 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
 
         local playerPosition = localplayer.Character:FindFirstChild("HumanoidRootPart").Position
         local playerDistance = (playerPosition - closestPlayerHRP.Position).magnitude
-        local throwDistance = 150 -- Change this to the desired throw distance in meters
+        local throwDistance = 500 -- Change this to the desired throw distance in meters
 
         if playerDistance > throwDistance then
             fu.notification("Player is too far to throw at.")
