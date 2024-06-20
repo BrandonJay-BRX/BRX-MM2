@@ -1,5 +1,5 @@
 -- YARHM By Imperial and BRX By Brandon Jay, v1.13.4
-
+-- Ohaha
 -- Instances:
 
 local Converted = {
@@ -2117,7 +2117,7 @@ local function RRLK_fake_script() -- Fake Script: StarterGui.BRX.Init
 	_G.Modules = {}
 	
 	--require(script.Parent.FUNCTIONS).notification("Thanks for using BRX! To use this hub, triple-click/tap the top region of your screen.")
-	require(script.Parent.FUNCTIONS).notification("v1.13.4/n- Adjusted ⚙️: Throw Knife range increased to 100m-150m. Use it at your own risk. ⚠️")
+	require(script.Parent.FUNCTIONS).notification("v1.13.5/n- New Update!: Recent Tool Added. Use it at your own risk. ⚠️")
 	
 	
 	local menudrag = require(script.Parent.DraggableObject).new(script.Parent.Menu)
@@ -3409,7 +3409,7 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
 
         local playerPosition = localplayer.Character:FindFirstChild("HumanoidRootPart").Position
         local playerDistance = (playerPosition - closestPlayerHRP.Position).magnitude
-        local throwDistance = 500 -- Change this to the desired throw distance in meters
+        local throwDistance = 150 -- Change this to the desired throw distance in meters
 
         if playerDistance > throwDistance then
             fu.notification("Player is too far to throw at.")
@@ -3508,6 +3508,79 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
 			end,
 		}}
 	})
+	
+	table.insert(module, {Type="Text", Args={""}})
+	
+	table.insert(module, {
+		Type = "Text",
+		Args = {"Newly Added <font color='#008000'>Script.</font> .", "center"}
+	})
+	
+	
+    table.insert(module, {
+	Type = "Button",
+	Args = {"Eliminate Nearby Player (DETECTABLE)", function()
+		if findMurderer() ~= localplayer then 
+			fu.notification("You're not the murderer.") 
+			return 
+		end
+	
+		if not localplayer.Character:FindFirstChild("Knife") then
+			local hum = localplayer.Character:FindFirstChild("Humanoid")
+			if localplayer.Backpack:FindFirstChild("Knife") then
+				localplayer.Character.Humanoid:EquipTool(localplayer.Backpack:FindFirstChild("Knife"))
+			else
+				fu.notification("You don't have the knife.")
+				return
+			end
+		end
+	
+		local NearestPlayer = findNearestPlayer()
+	
+		if NearestPlayer and NearestPlayer.Character then
+	
+			-- Get the HumanoidRootParts
+			local localRootPart = localplayer.Character:FindFirstChild("HumanoidRootPart")
+			local nearestRootPart = NearestPlayer.Character:FindFirstChild("HumanoidRootPart")
+	
+			if localRootPart and nearestRootPart then
+				-- Calculate the distance between the local player and the nearest player
+				local distance = (localRootPart.Position - nearestRootPart.Position).magnitude
+				
+				-- Check if the distance is within a certain range (e.g., 100 meters)
+				if distance <= 100 then
+					-- Calculate the look vector of the nearest player
+					local lookVector = nearestRootPart.CFrame.LookVector
+	
+					-- Calculate the offset position slightly behind the nearest player
+					local offsetPosition = nearestRootPart.Position - (lookVector * 3) -- Adjusted for slight distance behind the player
+	
+					-- Teleport the local player to the offset position
+					localRootPart.CFrame = CFrame.new(offsetPosition)
+					
+					-- Equip the knife if it's not already equipped
+					local knife = localplayer.Character:FindFirstChild("Knife")
+					if knife then
+						localplayer.Character.Humanoid:EquipTool(knife)
+					end
+					
+					-- Fire the server event to stab the nearest player
+					local args = {
+						[1] = "Slash"
+					}
+	
+					localplayer.Character.Knife.Stab:FireServer(unpack(args))
+				else
+					fu.notification("The nearest player is too far away!")
+				end
+			end
+		else
+			fu.notification("Can't find a player nearby.")
+		end
+	
+	end,}
+})
+
 	
 	table.insert(module, {Type="Text", Args={""}})
 	
