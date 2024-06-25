@@ -719,7 +719,7 @@ Converted["_CanvasGroup"].Parent = Converted["_Menu"]
 
 Converted["_UICorner14"].Parent = Converted["_CanvasGroup"]
 
-Converted["_ImageLabel"].Image = "rbxassetid://17864987433"
+Converted["_ImageLabel"].Image = "rbxassetid://18197953656"
 Converted["_ImageLabel"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_ImageLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_ImageLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -2117,7 +2117,7 @@ local function RRLK_fake_script() -- Fake Script: StarterGui.BRX.Init
 	_G.Modules = {}
 	
 	--require(script.Parent.FUNCTIONS).notification("Thanks for using BRX! To use this hub, triple-click/tap the top region of your screen.")
-	require(script.Parent.FUNCTIONS).notification("v1.13.5/n- New Update!: Recent Tool Added. [Tool Adjustment]: Player ESP,Auto Shooting [Not Tested] and Coin Magnet: 2 Coins Collected Every 2 Seconds.")
+	require(script.Parent.FUNCTIONS).notification("V1.0/n- Recent Tool Added. [Tool Adjustment]: Player ESP,Auto Shooting [Not Tested] and Coin Magnet: 2 Coins Collected Every 2 Seconds.")
 	
 	
 	local menudrag = require(script.Parent.DraggableObject).new(script.Parent.Menu)
@@ -2808,6 +2808,11 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
 	local autoShooting = false
 	local shootOffset = 2
 	
+	local autoGetDroppedGun = false
+    local pickUpDistanceMeters = 150 -- Set the distance threshold in meters
+    local pickUpDistanceStuds = pickUpDistanceMeters * 3.57 -- Calculating Huhu
+	local godModeEnabled = false
+	
 	local localplayer = game:GetService("Players").LocalPlayer
 	
 	local playerData = {}
@@ -2964,7 +2969,7 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
 			until findMurderer()
 			local listplayers = game.Players:GetChildren()
 			for _, player in ipairs(listplayers) do
-				if  player.Character ~= nil then
+				if player.Character ~= nil then
 					local character = player.Character
 					if not character:FindFirstChild("PlayerESP") then
 						local a = Instance.new("Highlight", script.Parent)
@@ -2981,13 +2986,18 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
 								mbgui.Adornee = character
 								a.FillColor = Color3.fromRGB(255,0,0)
 							elseif player == findSheriff() then
+								local sbgui = script.Parent.SheriffBGUI:Clone()
+								sbgui.Enabled = true
+								sbgui.Name = "AppliedSheriffBGUI"
+								sbgui.Parent = _G.BRX
+								sbgui.Adornee = character
 								a.FillColor = Color3.fromRGB(0, 150, 255)
 							else
 								a.FillColor = Color3.fromRGB(0,255,0)
 							end
 							if a then
 								if not player then return end
-								a.Adornee = player.Character or player.CharactedAdded:Wait()
+								a.Adornee = player.Character or player.CharacterAdded:Wait()
 							end
 						end)
 					end
@@ -2996,7 +3006,7 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
 			fu.notification("Player ESP reloaded.")
 		end
 	end)
-	
+
 	workspace.ChildRemoved:Connect(function(ch)
 		if ch.Name == "Normal" and playerESP then
 			fu.notification("Game ended, removing Player ESPs.")
@@ -3312,46 +3322,111 @@ end,
 	
 	
 	table.insert(module, {
-		Type = "Button",
-		Args = {"Shoot murderer", function(Self)
-			if findSheriff() ~= localplayer then 
-			    fu.notification("Follow (brx12k) on Tiktok!") -- Notification added here
-				fu.notification("You're not sheriff/hero.") 
-				return 
-			end
-	
-			local murderer = findMurderer()
-			if not murderer then
-				fu.notification("No murderer to shoot.")
-				return
-			end
-	
-			if not localplayer.Character:FindFirstChild("Gun") then
-				local hum = localplayer.Character:FindFirstChild("Humanoid")
-				if localplayer.Backpack:FindFirstChild("Gun") then
-					hum:EquipTool(localplayer.Backpack:FindFirstChild("Gun"))
-				else
-					fu.notification("You don't have the gun..?")
-					return
+    Type = "Toggle",
+    Args = {"God mode (Can't be seen)", function(Self, state) -- Credits to EdgeIY, Infinite Yield
+        godModeEnabled = state
+        
+        if godModeEnabled then
+            -- Enable God Mode
+            local Cam = workspace.CurrentCamera
+            local Pos, Char = Cam.CFrame, localplayer.Character
+            local Human = Char and Char:FindFirstChildWhichIsA("Humanoid")
+            if Human then
+                local nHuman = Human:Clone()
+                nHuman.Parent = Char
+                localplayer.Character = nil
+                nHuman:SetStateEnabled(Enum.HumanoidStateType.Physics, false)
+                nHuman:SetStateEnabled(Enum.HumanoidStateType.GettingUp, false)
+                nHuman:SetStateEnabled(Enum.HumanoidStateType.Dead, false)
+                nHuman.BreakJointsOnDeath = true
+                Human:Destroy()
+                localplayer.Character = Char
+                Cam.CameraSubject = nHuman
+                Cam.CFrame = Pos
+                nHuman.DisplayDistanceType = Enum.HumanoidDisplayDistanceType.None
+
+                local Script = Char:FindFirstChild("Animate")
+                if Script then
+                    Script.Disabled = true
+                    wait()
+                    Script.Disabled = false
+                end
+
+                nHuman.Health = nHuman.MaxHealth
+            end
+        else
+            -- Disable God Mode
+            local Cam = workspace.CurrentCamera
+            local Pos, Char = Cam.CFrame, localplayer.Character
+            local Human = Char and Char:FindFirstChildWhichIsA("Humanoid")
+            if Human then
+                local nHuman = Human:Clone()
+                nHuman.Parent = Char
+                localplayer.Character = nil
+                nHuman:SetStateEnabled(Enum.HumanoidStateType.Physics, true)
+                nHuman:SetStateEnabled(Enum.HumanoidStateType.GettingUp, true)
+                nHuman:SetStateEnabled(Enum.HumanoidStateType.Dead, true)
+                nHuman.BreakJointsOnDeath = false
+                Human:Destroy()
+                localplayer.Character = Char
+                Cam.CameraSubject = nHuman
+                Cam.CFrame = Pos
+                nHuman.DisplayDistanceType = Enum.HumanoidDisplayDistanceType.Distance
+
+                local Script = Char:FindFirstChild("Animate")
+                if Script then
+                    Script.Disabled = true
+                    wait()
+                    Script.Disabled = false
+                end
+
+                nHuman.Health = nHuman.MaxHealth
+            end
+        end
+    end}
+})
+
+
+	table.insert(module, {
+	Type = "Toggle",
+	Args = {"Automatically get gun on drop", function(Self, state)
+		autoGetDroppedGun = state
+		if autoGetDroppedGun then
+			fu.notification("Automatic gun retrieval enabled.")
+			-- Start monitoring for gun drops
+			coroutine.wrap(function()
+				while autoGetDroppedGun do
+					local gunDrop = workspace:FindFirstChild("GunDrop")
+					if gunDrop then
+						local character = localplayer.Character
+						local characterPosition = character:GetPivot().Position
+						local gunDropPosition = gunDrop.Position
+						
+						local distanceToGunDrop = (characterPosition - gunDropPosition).Magnitude
+						
+						if distanceToGunDrop <= pickUpDistanceStuds then
+							local previousPosition = character:GetPivot()
+
+							-- Move to the gun drop position
+							character:MoveTo(gunDrop.Position)
+							
+							-- Wait for the gun to be picked up
+							localplayer.Backpack.ChildAdded:Wait()
+							
+							-- Return to the previous position
+							character:PivotTo(previousPosition)
+						else
+							fu.notification("Gun drop detected but too far away to auto-pickup.")
+						end
+					end
+					wait(1) -- Check every second
 				end
-			end
-	
-			local murdererHRP = murderer.Character:FindFirstChild("HumanoidRootPart")
-			if not murdererHRP then
-				fu.notification("Could not find the murderer's HumanoidRootPart.")
-				return
-			end
-	
-			local predictedPosition = getPredictedPosition(murderer, shootOffset)
-	
-			local args = {
-				[1] = 1,
-				[2] = predictedPosition,
-				[3] = "AH"
-			}
-			localplayer.Character.Gun.KnifeServer.ShootGun:InvokeServer(unpack(args))
-		end,}
-	})
+			end)()
+		else
+			fu.notification("Automatic gun retrieval disabled.")
+		end
+	end}
+})
 	
 	
 	table.insert(module, {
@@ -3638,6 +3713,74 @@ end,
 })
 
 	
+	table.insert(module, {
+	Type = "Button",
+	Args = {"Replace Nearby Player (DETECTABLE)", function()
+		if findMurderer() ~= localplayer then 
+			fu.notification("You're not the murderer.") 
+			return 
+		end
+	
+		if not localplayer.Character:FindFirstChild("Knife") then
+			local hum = localplayer.Character:FindFirstChild("Humanoid")
+			if localplayer.Backpack:FindFirstChild("Knife") then
+				localplayer.Character.Humanoid:EquipTool(localplayer.Backpack:FindFirstChild("Knife"))
+			else
+				fu.notification("You don't have the knife.")
+				return
+			end
+		end
+	
+		local NearestPlayer = findNearestPlayer()
+	
+		if NearestPlayer and NearestPlayer.Character then
+	
+			-- Get the HumanoidRootParts
+			local localRootPart = localplayer.Character:FindFirstChild("HumanoidRootPart")
+			local nearestRootPart = NearestPlayer.Character:FindFirstChild("HumanoidRootPart")
+	
+			if localRootPart and nearestRootPart then
+				-- Calculate the distance between the local player and the nearest player
+				local distance = (localRootPart.Position - nearestRootPart.Position).magnitude
+				
+				-- Check if the distance is within a certain range (e.g., 100 meters)
+				if distance <= 100 then
+					-- Calculate the offset position to teleport the nearest player face-to-face with you
+					local lookVector = localRootPart.CFrame.LookVector
+					local offsetPosition = localRootPart.Position + (lookVector * 3) -- Adjusted for face-to-face position with the player
+	
+					-- Check if the offset position is valid (not in the void)
+					if offsetPosition.Y > 0 then
+						-- Teleport the nearest player to the offset position
+						nearestRootPart.CFrame = CFrame.new(offsetPosition)
+						
+						-- Equip the knife if it's not already equipped
+						local knife = localplayer.Character:FindFirstChild("Knife")
+						if knife then
+							localplayer.Character.Humanoid:EquipTool(knife)
+						end
+						
+						-- Fire the server event to stab the nearest player
+						local args = {
+							[1] = "Slash"
+						}
+		
+						localplayer.Character.Knife.Stab:FireServer(unpack(args))
+					else
+						fu.notification("Invalid position to teleport the player.")
+					end
+				else
+					fu.notification("The nearest player is too far away!")
+				end
+			end
+		else
+			fu.notification("Can't find a player nearby.")
+		end
+	
+	end,}
+})
+
+
 	table.insert(module, {Type="Text", Args={""}})
 	
 	table.insert(module, {
