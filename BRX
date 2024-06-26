@@ -719,7 +719,7 @@ Converted["_CanvasGroup"].Parent = Converted["_Menu"]
 
 Converted["_UICorner14"].Parent = Converted["_CanvasGroup"]
 
-Converted["_ImageLabel"].Image = "rbxassetid://18197953656"
+Converted["_ImageLabel"].Image = "rbxassetid://18211548563"
 Converted["_ImageLabel"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_ImageLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_ImageLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -3321,6 +3321,63 @@ end,
 	})
 	
 	
+	table.insert(module, {
+    Type = "Button",
+    Args = {"Shoot murderer", function(Self)
+        if findSheriff() ~= localplayer then 
+            fu.notification("You're not sheriff/hero.") 
+            return 
+        end
+
+        local murderer = findMurderer()
+        if not murderer then
+            fu.notification("No murderer to shoot.")
+            return
+        end
+
+        if not localplayer.Character:FindFirstChild("Gun") then
+            local hum = localplayer.Character:FindFirstChild("Humanoid")
+            if localplayer.Backpack:FindFirstChild("Gun") then
+                hum:EquipTool(localplayer.Backpack:FindFirstChild("Gun"))
+            else
+                fu.notification("You don't have the gun..?")
+                return
+            end
+        end
+
+        local murdererHRP = murderer.Character:FindFirstChild("HumanoidRootPart")
+        if not murdererHRP then
+            fu.notification("Could not find the murderer's HumanoidRootPart.")
+            return
+        end
+        
+        local predictedPosition = getPredictedPosition(murderer, shootOffset)
+        
+        -- Enhanced Prediction for Jumping Murderer
+        if murderer.Character:FindFirstChild("Humanoid").Jump then
+            -- Incorporating the provided function
+            predictedPosition = getPredictedPositionWhileJumping(murderer, shootOffset)
+        end
+
+        local args = {
+            [1] = 1,
+            [2] = predictedPosition,
+            [3] = "AH"
+        }
+        
+        local success, result = pcall(function()
+            return localplayer.Character.Gun.KnifeServer.ShootGun:InvokeServer(unpack(args))
+        end)
+        
+        if not success then
+            fu.notification("Failed to shoot: " .. tostring(result))
+        else
+            fu.notification("Shot fired successfully.")
+        end
+    end,}
+})
+
+
 	table.insert(module, {
     Type = "Toggle",
     Args = {"God mode (Can't be seen)", function(Self, state) -- Credits to EdgeIY, Infinite Yield
