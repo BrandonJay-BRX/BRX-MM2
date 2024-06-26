@@ -1,9 +1,9 @@
--- YARHM By Imperial and BRX By Brandon Jay, v1.13.4
--- Ohaha
+-- SUNGSZ by Imperail, v1.13.1.2
+-- rbxassetid://18203152834
 -- Instances:
 
 local Converted = {
-	["_BRX"] = Instance.new("ScreenGui");
+	["_SUNGSZ"] = Instance.new("ScreenGui");
 	["_Open"] = Instance.new("TextButton");
 	["_UICorner"] = Instance.new("UICorner");
 	["_InitOpen"] = Instance.new("LocalScript");
@@ -20,8 +20,6 @@ local Converted = {
 	["_Placeholder"] = Instance.new("Frame");
 	["_UICorner2"] = Instance.new("UICorner");
 	["_TextLabel"] = Instance.new("TextLabel");
-	["_Flee the Facility"] = Instance.new("LocalScript");
-	["_Universal"] = Instance.new("LocalScript");
 	["_TextBoxPlaceholder"] = Instance.new("Frame");
 	["_UIListLayout1"] = Instance.new("UIListLayout");
 	["_TextButton"] = Instance.new("TextButton");
@@ -36,7 +34,6 @@ local Converted = {
 	["_UIStroke"] = Instance.new("UIStroke");
 	["_Invisible"] = Instance.new("LocalScript");
 	["_FloatingButtons"] = Instance.new("Frame");
-	["_Murder Mystery 2"] = Instance.new("LocalScript");
 	["_AddCustomModule"] = Instance.new("Frame");
 	["_UICorner6"] = Instance.new("UICorner");
 	["_UIStroke1"] = Instance.new("UIStroke");
@@ -133,20 +130,42 @@ local Converted = {
 	["_UICorner18"] = Instance.new("UICorner");
 	["_ImageLabel1"] = Instance.new("ImageLabel");
 	["_UIPadding12"] = Instance.new("UIPadding");
+	["_Modules"] = Instance.new("Folder");
+	["_Flee the Facility"] = Instance.new("LocalScript");
+	["_Murder Mystery 2"] = Instance.new("LocalScript");
+	["_Universal"] = Instance.new("LocalScript");
+	["_DropdownFrameSample"] = Instance.new("Frame");
+	["_UICorner19"] = Instance.new("UICorner");
+	["_UIGradient9"] = Instance.new("UIGradient");
+	["_UIStroke12"] = Instance.new("UIStroke");
+	["_UIGradient10"] = Instance.new("UIGradient");
+	["_ScrollingFrame1"] = Instance.new("ScrollingFrame");
+	["_UIListLayout6"] = Instance.new("UIListLayout");
+	["_Sample"] = Instance.new("TextButton");
+	["_UIPadding13"] = Instance.new("UIPadding");
+	["_UICorner20"] = Instance.new("UICorner");
+	["_UIPadding14"] = Instance.new("UIPadding");
+	["_Dropdown"] = Instance.new("Frame");
+	["_TextLabel8"] = Instance.new("TextLabel");
+	["_UIListLayout7"] = Instance.new("UIListLayout");
+	["_UIPadding15"] = Instance.new("UIPadding");
+	["_Frame2"] = Instance.new("TextButton");
+	["_UIPadding16"] = Instance.new("UIPadding");
+	["_UICorner21"] = Instance.new("UICorner");
 }
 
 -- Properties:
 
-Converted["_BRX"].DisplayOrder = 999999999
-Converted["_BRX"].IgnoreGuiInset = true
-Converted["_BRX"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
-Converted["_BRX"].ResetOnSpawn = false
-Converted["_BRX"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Converted["_BRX"].Name = "BRX"
-Converted["_BRX"].Parent = game:GetService("CoreGui")
+Converted["_SUNGSZ"].DisplayOrder = 3
+Converted["_SUNGSZ"].IgnoreGuiInset = true
+Converted["_SUNGSZ"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
+Converted["_SUNGSZ"].ResetOnSpawn = false
+Converted["_SUNGSZ"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Converted["_SUNGSZ"].Name = "SUNGSZ"
+Converted["_SUNGSZ"].Parent = game:GetService("CoreGui")
 
 Converted["_Open"].Font = Enum.Font.Gotham
-Converted["_Open"].Text = "Triple-click this region to open BRX."
+Converted["_Open"].Text = "Triple-click this region to open SUNGSZ."
 Converted["_Open"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Open"].TextScaled = true
 Converted["_Open"].TextSize = 14
@@ -162,7 +181,7 @@ Converted["_Open"].Selectable = false
 Converted["_Open"].Size = UDim2.new(0, 493, 0, 50)
 Converted["_Open"].Visible = false
 Converted["_Open"].Name = "Open"
-Converted["_Open"].Parent = Converted["_BRX"]
+Converted["_Open"].Parent = Converted["_SUNGSZ"]
 
 Converted["_UICorner"].Parent = Converted["_Open"]
 
@@ -185,7 +204,7 @@ Converted["_ListButton"].Position = UDim2.new(0.0450000018, 0, 0.112000003, 0)
 Converted["_ListButton"].Size = UDim2.new(1, 0, 0, 50)
 Converted["_ListButton"].Visible = false
 Converted["_ListButton"].Name = "ListButton"
-Converted["_ListButton"].Parent = Converted["_BRX"]
+Converted["_ListButton"].Parent = Converted["_SUNGSZ"]
 
 Converted["_UICorner1"].Parent = Converted["_ListButton"]
 
@@ -197,7 +216,7 @@ Converted["_Notifications"].BorderSizePixel = 0
 Converted["_Notifications"].Position = UDim2.new(-0.00062737026, 0, 0.499319851, 0)
 Converted["_Notifications"].Size = UDim2.new(0, 242, 1, 0)
 Converted["_Notifications"].Name = "Notifications"
-Converted["_Notifications"].Parent = Converted["_BRX"]
+Converted["_Notifications"].Parent = Converted["_SUNGSZ"]
 
 Converted["_UIListLayout"].Padding = UDim.new(0, 10)
 Converted["_UIListLayout"].HorizontalAlignment = Enum.HorizontalAlignment.Center
@@ -242,7 +261,7 @@ Converted["_TextBoxPlaceholder"].BorderSizePixel = 0
 Converted["_TextBoxPlaceholder"].Size = UDim2.new(1, 0, 0, 50)
 Converted["_TextBoxPlaceholder"].Visible = false
 Converted["_TextBoxPlaceholder"].Name = "TextBoxPlaceholder"
-Converted["_TextBoxPlaceholder"].Parent = Converted["_BRX"]
+Converted["_TextBoxPlaceholder"].Parent = Converted["_SUNGSZ"]
 
 Converted["_UIListLayout1"].Padding = UDim.new(0, 5)
 Converted["_UIListLayout1"].FillDirection = Enum.FillDirection.Horizontal
@@ -274,6 +293,7 @@ Converted["_TextBox"].PlaceholderText = "Placeholder"
 Converted["_TextBox"].Text = ""
 Converted["_TextBox"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_TextBox"].TextSize = 14
+Converted["_TextBox"].TextWrapped = true
 Converted["_TextBox"].BackgroundColor3 = Color3.fromRGB(22.000000588595867, 22.000000588595867, 22.000000588595867)
 Converted["_TextBox"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_TextBox"].BorderSizePixel = 0
@@ -292,11 +312,11 @@ Converted["_FloatingButton"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_FloatingButton"].BackgroundColor3 = Color3.fromRGB(31.000001952052116, 31.000001952052116, 31.000001952052116)
 Converted["_FloatingButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_FloatingButton"].BorderSizePixel = 0
-Converted["_FloatingButton"].Position = UDim2.new(0, 400, 0, 200)
-Converted["_FloatingButton"].Size = UDim2.new(0, 200, 0, 50)
+Converted["_FloatingButton"].Position = UDim2.new(0, 125, 0, 40)
+Converted["_FloatingButton"].Size = UDim2.new(0, 50, 0, 100)
 Converted["_FloatingButton"].Visible = false
 Converted["_FloatingButton"].Name = "FloatingButton"
-Converted["_FloatingButton"].Parent = Converted["_BRX"]
+Converted["_FloatingButton"].Parent = Converted["_SUNGSZ"]
 
 Converted["_UIPadding3"].PaddingBottom = UDim.new(0, 5)
 Converted["_UIPadding3"].PaddingLeft = UDim.new(0, 5)
@@ -317,9 +337,9 @@ Converted["_FloatingButtons"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_FloatingButtons"].BorderSizePixel = 0
 Converted["_FloatingButtons"].Position = UDim2.new(0.5, 0, 0.5, 0)
 Converted["_FloatingButtons"].Size = UDim2.new(1, 0, 1, 0)
-Converted["_FloatingButtons"].ZIndex = 0
+Converted["_FloatingButtons"].ZIndex = 3
 Converted["_FloatingButtons"].Name = "FloatingButtons"
-Converted["_FloatingButtons"].Parent = Converted["_BRX"]
+Converted["_FloatingButtons"].Parent = Converted["_SUNGSZ"]
 
 Converted["_AddCustomModule"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_AddCustomModule"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -328,8 +348,9 @@ Converted["_AddCustomModule"].BorderSizePixel = 0
 Converted["_AddCustomModule"].ClipsDescendants = true
 Converted["_AddCustomModule"].Position = UDim2.new(0.5, 0, -0.5, 0)
 Converted["_AddCustomModule"].Size = UDim2.new(0, 440, 0, 268)
+Converted["_AddCustomModule"].ZIndex = 3
 Converted["_AddCustomModule"].Name = "AddCustomModule"
-Converted["_AddCustomModule"].Parent = Converted["_BRX"]
+Converted["_AddCustomModule"].Parent = Converted["_SUNGSZ"]
 
 Converted["_UICorner6"].Parent = Converted["_AddCustomModule"]
 
@@ -471,7 +492,7 @@ Converted["_DroppedGunBGUI"].Size = UDim2.new(0, 70, 0, 70)
 Converted["_DroppedGunBGUI"].Enabled = false
 Converted["_DroppedGunBGUI"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Converted["_DroppedGunBGUI"].Name = "DroppedGunBGUI"
-Converted["_DroppedGunBGUI"].Parent = Converted["_BRX"]
+Converted["_DroppedGunBGUI"].Parent = Converted["_SUNGSZ"]
 
 Converted["_TextLabel3"].Font = Enum.Font.SourceSansBold
 Converted["_TextLabel3"].Text = "Dropped Gun!"
@@ -498,7 +519,7 @@ Converted["_MurdererBGUI"].StudsOffset = Vector3.new(0, 2, 2)
 Converted["_MurdererBGUI"].Enabled = false
 Converted["_MurdererBGUI"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Converted["_MurdererBGUI"].Name = "MurdererBGUI"
-Converted["_MurdererBGUI"].Parent = Converted["_BRX"]
+Converted["_MurdererBGUI"].Parent = Converted["_SUNGSZ"]
 
 Converted["_TextLabel4"].Font = Enum.Font.SourceSansBold
 Converted["_TextLabel4"].Text = "Murderer"
@@ -525,7 +546,7 @@ Converted["_Menu"].ClipsDescendants = true
 Converted["_Menu"].Position = UDim2.new(0.499372661, 0, 0.0410327986, 0)
 Converted["_Menu"].Size = UDim2.new(0, 441, 0, 268)
 Converted["_Menu"].Name = "Menu"
-Converted["_Menu"].Parent = Converted["_BRX"]
+Converted["_Menu"].Parent = Converted["_SUNGSZ"]
 
 Converted["_UICorner10"].Parent = Converted["_Menu"]
 
@@ -657,10 +678,10 @@ Converted["_UICorner13"].Parent = Converted["_Close"]
 Converted["_UIStroke9"].Parent = Converted["_Close"]
 
 Converted["_HubCredits"].Font = Enum.Font.GothamBold
-Converted["_HubCredits"].Text = "YARHM By Imperial or Joysticks| BRX By Brandon Jay On FB and Throw knife to givepetroblox."
+Converted["_HubCredits"].Text = "made and open sourced by imperial"
 Converted["_HubCredits"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_HubCredits"].TextScaled = true
-Converted["_HubCredits"].TextSize = 9
+Converted["_HubCredits"].TextSize = 14
 Converted["_HubCredits"].TextTransparency = 0.699999988079071
 Converted["_HubCredits"].TextWrapped = true
 Converted["_HubCredits"].TextXAlignment = Enum.TextXAlignment.Right
@@ -675,7 +696,7 @@ Converted["_HubCredits"].Name = "HubCredits"
 Converted["_HubCredits"].Parent = Converted["_Menu"]
 
 Converted["_HubDesc"].Font = Enum.Font.GothamBold
-Converted["_HubDesc"].Text = "BRX"
+Converted["_HubDesc"].Text = "Sung Sz"
 Converted["_HubDesc"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_HubDesc"].TextSize = 14
 Converted["_HubDesc"].TextWrapped = true
@@ -691,7 +712,7 @@ Converted["_HubDesc"].Name = "HubDesc"
 Converted["_HubDesc"].Parent = Converted["_Menu"]
 
 Converted["_HubName"].Font = Enum.Font.GothamBold
-Converted["_HubName"].Text = "BRX"
+Converted["_HubName"].Text = "SUNGSZ"
 Converted["_HubName"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_HubName"].TextScaled = true
 Converted["_HubName"].TextSize = 14
@@ -714,12 +735,13 @@ Converted["_CanvasGroup"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_CanvasGroup"].BorderSizePixel = 0
 Converted["_CanvasGroup"].Position = UDim2.new(0.5, 0, 0.5, 0)
 Converted["_CanvasGroup"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_CanvasGroup"].Visible = false
 Converted["_CanvasGroup"].ZIndex = 999999999
 Converted["_CanvasGroup"].Parent = Converted["_Menu"]
 
 Converted["_UICorner14"].Parent = Converted["_CanvasGroup"]
 
-Converted["_ImageLabel"].Image = "rbxassetid://18211548563"
+Converted["_ImageLabel"].Image = "rbxassetid://18203152710"
 Converted["_ImageLabel"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_ImageLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_ImageLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -767,7 +789,7 @@ Converted["_Area1"].Name = "Area"
 Converted["_Area1"].Parent = Converted["_Area"]
 
 Converted["_TextLabel5"].Font = Enum.Font.GothamBold
-Converted["_TextLabel5"].Text = "yet another random hub menu"
+Converted["_TextLabel5"].Text = "Sung Sz"
 Converted["_TextLabel5"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_TextLabel5"].TextSize = 14
 Converted["_TextLabel5"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -780,7 +802,7 @@ Converted["_TextLabel5"].Size = UDim2.new(0, 200, 0, 50)
 Converted["_TextLabel5"].Parent = Converted["_Area1"]
 
 Converted["_TextLabel6"].Font = Enum.Font.GothamBold
-Converted["_TextLabel6"].Text = "BRX"
+Converted["_TextLabel6"].Text = "SUNGSZ"
 Converted["_TextLabel6"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_TextLabel6"].TextScaled = true
 Converted["_TextLabel6"].TextSize = 14
@@ -801,7 +823,7 @@ Converted["_Dialog"].BorderSizePixel = 0
 Converted["_Dialog"].Position = UDim2.new(0.499068826, 0, 0.983805656, 0)
 Converted["_Dialog"].Size = UDim2.new(0, 313, 0, 147)
 Converted["_Dialog"].Name = "Dialog"
-Converted["_Dialog"].Parent = Converted["_BRX"]
+Converted["_Dialog"].Parent = Converted["_SUNGSZ"]
 
 Converted["_UICorner15"].Parent = Converted["_Dialog"]
 
@@ -931,7 +953,7 @@ Converted["_Toggle"].BorderSizePixel = 0
 Converted["_Toggle"].Size = UDim2.new(1, 0, 0, 35)
 Converted["_Toggle"].Visible = false
 Converted["_Toggle"].Name = "Toggle"
-Converted["_Toggle"].Parent = Converted["_BRX"]
+Converted["_Toggle"].Parent = Converted["_SUNGSZ"]
 
 Converted["_TextLabel7"].Font = Enum.Font.Unknown
 Converted["_TextLabel7"].Text = "Loop walkspeed and FOV"
@@ -1001,14 +1023,146 @@ Converted["_ImageLabel1"].Parent = Converted["_Toggler"]
 Converted["_UIPadding12"].PaddingRight = UDim.new(0.0700000003, 0)
 Converted["_UIPadding12"].Parent = Converted["_Toggle"]
 
+Converted["_Modules"].Name = "Modules"
+Converted["_Modules"].Parent = Converted["_SUNGSZ"]
+
+Converted["_DropdownFrameSample"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_DropdownFrameSample"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_DropdownFrameSample"].BorderSizePixel = 0
+Converted["_DropdownFrameSample"].Size = UDim2.new(0, 108, 0, 239)
+Converted["_DropdownFrameSample"].Visible = false
+Converted["_DropdownFrameSample"].Name = "DropdownFrameSample"
+Converted["_DropdownFrameSample"].Parent = Converted["_SUNGSZ"]
+
+Converted["_UICorner19"].Parent = Converted["_DropdownFrameSample"]
+
+Converted["_UIGradient9"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(36.00000165402889, 36.00000165402889, 36.00000165402889)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(68.00000354647636, 68.00000354647636, 68.00000354647636))
+}
+Converted["_UIGradient9"].Rotation = 68
+Converted["_UIGradient9"].Parent = Converted["_DropdownFrameSample"]
+
+Converted["_UIStroke12"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke12"].Thickness = 2
+Converted["_UIStroke12"].Parent = Converted["_DropdownFrameSample"]
+
+Converted["_UIGradient10"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(111.00000098347664, 111.00000098347664, 111.00000098347664)),
+	ColorSequenceKeypoint.new(0.6401384472846985, Color3.fromRGB(114.23875719308853, 114.23875719308853, 114.23875719308853)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
+}
+Converted["_UIGradient10"].Rotation = -107
+Converted["_UIGradient10"].Parent = Converted["_UIStroke12"]
+
+Converted["_ScrollingFrame1"].AutomaticCanvasSize = Enum.AutomaticSize.XY
+Converted["_ScrollingFrame1"].CanvasSize = UDim2.new(0, 0, 0, 0)
+Converted["_ScrollingFrame1"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_ScrollingFrame1"].ScrollBarThickness = 0
+Converted["_ScrollingFrame1"].Active = true
+Converted["_ScrollingFrame1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_ScrollingFrame1"].BackgroundTransparency = 1
+Converted["_ScrollingFrame1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_ScrollingFrame1"].BorderSizePixel = 0
+Converted["_ScrollingFrame1"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_ScrollingFrame1"].Parent = Converted["_DropdownFrameSample"]
+
+Converted["_UIListLayout6"].Padding = UDim.new(0, 5)
+Converted["_UIListLayout6"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_UIListLayout6"].Parent = Converted["_ScrollingFrame1"]
+
+Converted["_Sample"].Font = Enum.Font.Unknown
+Converted["_Sample"].Text = "This can fit a lot of text, probably."
+Converted["_Sample"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Sample"].TextScaled = true
+Converted["_Sample"].TextSize = 14
+Converted["_Sample"].TextWrapped = true
+Converted["_Sample"].BackgroundColor3 = Color3.fromRGB(22.000000588595867, 22.000000588595867, 22.000000588595867)
+Converted["_Sample"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Sample"].BorderSizePixel = 0
+Converted["_Sample"].Size = UDim2.new(1, 0, 0, 35)
+Converted["_Sample"].Visible = false
+Converted["_Sample"].Name = "Sample"
+Converted["_Sample"].Parent = Converted["_ScrollingFrame1"]
+
+Converted["_UIPadding13"].PaddingBottom = UDim.new(0, 7)
+Converted["_UIPadding13"].PaddingLeft = UDim.new(0, 7)
+Converted["_UIPadding13"].PaddingRight = UDim.new(0, 7)
+Converted["_UIPadding13"].PaddingTop = UDim.new(0, 7)
+Converted["_UIPadding13"].Parent = Converted["_Sample"]
+
+Converted["_UICorner20"].Parent = Converted["_Sample"]
+
+Converted["_UIPadding14"].PaddingBottom = UDim.new(0, 7)
+Converted["_UIPadding14"].PaddingLeft = UDim.new(0, 7)
+Converted["_UIPadding14"].PaddingRight = UDim.new(0, 7)
+Converted["_UIPadding14"].PaddingTop = UDim.new(0, 7)
+Converted["_UIPadding14"].Parent = Converted["_DropdownFrameSample"]
+
+Converted["_Dropdown"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Dropdown"].BackgroundTransparency = 1
+Converted["_Dropdown"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Dropdown"].BorderSizePixel = 0
+Converted["_Dropdown"].Size = UDim2.new(1, 0, 0, 35)
+Converted["_Dropdown"].Visible = false
+Converted["_Dropdown"].Name = "Dropdown"
+Converted["_Dropdown"].Parent = Converted["_SUNGSZ"]
+
+Converted["_TextLabel8"].Font = Enum.Font.Unknown
+Converted["_TextLabel8"].Text = "Loop walkspeed and FOV"
+Converted["_TextLabel8"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel8"].TextScaled = true
+Converted["_TextLabel8"].TextSize = 14
+Converted["_TextLabel8"].TextWrapped = true
+Converted["_TextLabel8"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_TextLabel8"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel8"].BackgroundTransparency = 1
+Converted["_TextLabel8"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextLabel8"].BorderSizePixel = 0
+Converted["_TextLabel8"].Size = UDim2.new(0.699999988, 0, 1, 0)
+Converted["_TextLabel8"].Parent = Converted["_Dropdown"]
+
+Converted["_UIListLayout7"].Padding = UDim.new(0, 15)
+Converted["_UIListLayout7"].FillDirection = Enum.FillDirection.Horizontal
+Converted["_UIListLayout7"].HorizontalAlignment = Enum.HorizontalAlignment.Center
+Converted["_UIListLayout7"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_UIListLayout7"].Parent = Converted["_Dropdown"]
+
+Converted["_UIPadding15"].PaddingLeft = UDim.new(0.0700000003, 0)
+Converted["_UIPadding15"].PaddingRight = UDim.new(0.0700000003, 0)
+Converted["_UIPadding15"].Parent = Converted["_Dropdown"]
+
+Converted["_Frame2"].Font = Enum.Font.Gotham
+Converted["_Frame2"].Text = "Select..."
+Converted["_Frame2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Frame2"].TextScaled = true
+Converted["_Frame2"].TextWrapped = true
+Converted["_Frame2"].Active = false
+Converted["_Frame2"].BackgroundColor3 = Color3.fromRGB(31.000001952052116, 31.000001952052116, 31.000001952052116)
+Converted["_Frame2"].BackgroundTransparency = -0.03999999910593033
+Converted["_Frame2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Frame2"].BorderSizePixel = 0
+Converted["_Frame2"].Selectable = false
+Converted["_Frame2"].Size = UDim2.new(0.400000006, 0, 1, 0)
+Converted["_Frame2"].Name = "Frame"
+Converted["_Frame2"].Parent = Converted["_Dropdown"]
+
+Converted["_UIPadding16"].PaddingBottom = UDim.new(0, 7)
+Converted["_UIPadding16"].PaddingLeft = UDim.new(0, 7)
+Converted["_UIPadding16"].PaddingRight = UDim.new(0, 7)
+Converted["_UIPadding16"].PaddingTop = UDim.new(0, 7)
+Converted["_UIPadding16"].Parent = Converted["_Frame2"]
+
+Converted["_UICorner21"].Parent = Converted["_Frame2"]
+
 -- Fake Module Scripts:
 
 local fake_module_scripts = {}
 
-do -- Fake Module: StarterGui.BRX.FUNCTIONS
+do -- Fake Module: StarterGui.SUNGSZ.FUNCTIONS
     local script = Instance.new("ModuleScript")
     script.Name = "FUNCTIONS"
-    script.Parent = Converted["_BRX"]
+    script.Parent = Converted["_SUNGSZ"]
     local function module_script()
 		local FUNCTIONSmodule = {}
 		
@@ -1334,11 +1488,11 @@ do -- Fake Module: StarterGui.BRX.FUNCTIONS
 						task.spawn(function()
 							task.wait(0.5)
 							if not hold then return end
-							if not _G.BRX.FloatingButtons:FindFirstChild(item["Args"][1]) then
+							if not _G.SUNGSZ.FloatingButtons:FindFirstChild(item["Args"][1]) then
 		
 		
-								local newFloatingButton = _G.BRX.FloatingButton:Clone()
-								newFloatingButton.Parent = _G.BRX.FloatingButtons
+								local newFloatingButton = _G.SUNGSZ.FloatingButton:Clone()
+								newFloatingButton.Parent = _G.SUNGSZ.FloatingButtons
 								newFloatingButton.Name = item["Args"][1]
 								newFloatingButton.Text = item["Args"][1]
 								newFloatingButton.Visible = true
@@ -1347,10 +1501,16 @@ do -- Fake Module: StarterGui.BRX.FUNCTIONS
 									item["Args"][2](newFloatingButton)
 								end)
 		
-								newFloatingButton.Size = UDim2.fromOffset(0, 0)
-								ts:Create(newFloatingButton, TweenInfo.new(1, Enum.EasingStyle.Elastic, Enum.EasingDirection.Out), {
-									Size = UDim2.fromOffset(200, 50)
-								}):Play()
+								newFloatingButton.Position = UDim2.fromOffset(-125, 90)
+								--newFloatingButton.Size = UDim2.fromOffset(button.AbsoluteSize.X, button.AbsoluteSize.Y)
+								task.spawn(function()
+									ts:Create(newFloatingButton, TweenInfo.new(2, Enum.EasingStyle.Elastic, Enum.EasingDirection.Out), {
+										Size = UDim2.fromOffset(200, 50)
+									}):Play()
+									ts:Create(newFloatingButton, TweenInfo.new(0.7, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {
+										Position = UDim2.fromOffset(125, 90)
+									}):Play()
+								end)
 								
 								floatingButtonDraggers[item["Args"][1]] = DraggableObject.new(newFloatingButton)
 								floatingButtonDraggers[item["Args"][1]]:Enable()
@@ -1365,7 +1525,7 @@ do -- Fake Module: StarterGui.BRX.FUNCTIONS
 											TextTransparency = 1
 										}):Play()
 										ts:Create(newFloatingButton.UIStroke, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.InOut), {
-											Transparency = 0.7
+											Transparency = 0.9
 										}):Play()
 									else
 										floatingButtonInvisibility[item["Args"][1]] = false
@@ -1439,7 +1599,15 @@ do -- Fake Module: StarterGui.BRX.FUNCTIONS
 								if floatingButtonConnections[item["Args"][1]] then
 									floatingButtonConnections[item["Args"][1]]:Disconnect()
 								end
-								_G.BRX.FloatingButtons:FindFirstChild(item["Args"][1]):Destroy()
+								task.spawn(function()
+									local buttontodestroy = _G.SUNGSZ.FloatingButtons:FindFirstChild(item["Args"][1])
+									local btdtween = ts:Create(buttontodestroy, TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {
+										Size = UDim2.new(0,0,0,0)
+									})
+									btdtween:Play()
+									btdtween.Completed:Wait()
+									buttontodestroy:Destroy()
+								end)
 							end
 						end)
 					end)
@@ -1513,7 +1681,7 @@ do -- Fake Module: StarterGui.BRX.FUNCTIONS
 		
 		
 				elseif item["Type"] == "Input" then
-					local cloneinput = _G.BRX.TextBoxPlaceholder:Clone()
+					local cloneinput = _G.SUNGSZ.TextBoxPlaceholder:Clone()
 					cloneinput.Parent = AREA
 					cloneinput.Visible = true
 		
@@ -1524,7 +1692,7 @@ do -- Fake Module: StarterGui.BRX.FUNCTIONS
 						item["Args"][3](cloneinput.TextButton, cloneinput.TextBox.Text)
 					end)
 				elseif item["Type"] == "Toggle" then
-					local clonetoggle = _G.BRX.Toggle:Clone()
+					local clonetoggle = _G.SUNGSZ.Toggle:Clone()
 					clonetoggle.Parent = AREA
 					clonetoggle.Visible = true
 					
@@ -1552,7 +1720,52 @@ do -- Fake Module: StarterGui.BRX.FUNCTIONS
 						end
 						item["Args"][2](clonetoggletoggler, toggleStates[item["Args"][1] .. module.Name])
 					end)
+				elseif item["Type"] == "Dropdown" then	
+					local clonedropdown = _G.SUNGSZ.Dropdown:Clone()
+					local dropdownFrame = _G.SUNGSZ.DropdownFrameSample
+					clonedropdown.Parent = AREA
+					clonedropdown.Visible = true
+		
+					clonedropdown.TextLabel.Text = item["Args"][1]
+					clonedropdown.Frame.MouseButton1Click:Connect(function()
+						for _, v in ipairs(dropdownFrame.ScrollingFrame:GetChildren()) do if v:IsA("TextButton") and v.Name ~= "Sample" then v:Destroy() end end
+						dropdownFrame.Position = UDim2.fromOffset(clonedropdown.Frame.AbsolutePosition.X - 2, clonedropdown.Frame.AbsolutePosition.Y + 98)
+						dropdownFrame.Size = UDim2.new(0,108,0,0)
+						dropdownFrame.Visible = true
+						ts:Create(dropdownFrame, TweenInfo.new(0.6, Enum.EasingStyle.Circular, Enum.EasingDirection.Out), {
+							Size = UDim2.fromOffset(108, 239)
+						}):Play()
+						
+						local items
+						if typeof(item["Args"][2]) == "function" then
+							items = item["Args"][2]()
+						else
+							items = item["Args"][2]
+						end
+						
+						for _, v in ipairs(items) do
+							local clonedropdownbutton = dropdownFrame.ScrollingFrame.Sample:Clone()
+							clonedropdownbutton.Parent = dropdownFrame.ScrollingFrame
+							clonedropdownbutton.Name = v
+							clonedropdownbutton.Visible = true
+							clonedropdownbutton.Text = v
+							clonedropdownbutton.MouseButton1Click:Connect(function()
+								--dropdownFrame.Visible = false
+								clonedropdown.Frame.Text = v
+								item["Args"][3](clonedropdown.Frame, v)
+								local after = ts:Create(dropdownFrame, TweenInfo.new(0.1, Enum.EasingStyle.Circular, Enum.EasingDirection.Out), {
+									Size = UDim2.fromOffset(108, 0)
+								})
+								after:Play()
+								after.Completed:Once(function()
+									dropdownFrame.Visible = false
+								end)
+							end)
+						end
+					end)
 				end
+				
+				
 			end
 			AREACONTAINER.Position = UDim2.fromScale(0.76, 0.606)
 			ts:Create(AREACONTAINER, TweenInfo.new(0.6, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {
@@ -1570,7 +1783,7 @@ do -- Fake Module: StarterGui.BRX.FUNCTIONS
 			end
 			for modulei, module in ipairs(_G.Modules) do
 				local success, err = pcall(function()
-					local listbutton = _G.BRX.ListButton:Clone()
+					local listbutton = _G.SUNGSZ.ListButton:Clone()
 					listbutton.Parent = script.Parent.Menu.List.ScrollingFrame
 					listbutton.Name = module.Name
 					listbutton.Text = module.Name
@@ -1619,7 +1832,7 @@ do -- Fake Module: StarterGui.BRX.FUNCTIONS
 		
 				end)
 				if not success then
-					warn("[BRX] Error while requiring " .. module.Name .. "!")
+					warn("[SUNGSZ] Error while requiring " .. module.Name .. "!")
 					warn(err)
 				end
 			end
@@ -1674,10 +1887,10 @@ do -- Fake Module: StarterGui.BRX.FUNCTIONS
     end
     fake_module_scripts[script] = module_script
 end
-do -- Fake Module: StarterGui.BRX.DraggableObject
+do -- Fake Module: StarterGui.SUNGSZ.DraggableObject
     local script = Instance.new("ModuleScript")
     script.Name = "DraggableObject"
-    script.Parent = Converted["_BRX"]
+    script.Parent = Converted["_SUNGSZ"]
     local function module_script()
 		--[[
 			@Author: Spynaz
@@ -1860,10 +2073,10 @@ do -- Fake Module: StarterGui.BRX.DraggableObject
     end
     fake_module_scripts[script] = module_script
 end
-do -- Fake Module: StarterGui.BRX.ClickAndHold
+do -- Fake Module: StarterGui.SUNGSZ.ClickAndHold
     local script = Instance.new("ModuleScript")
     script.Name = "ClickAndHold"
-    script.Parent = Converted["_BRX"]
+    script.Parent = Converted["_SUNGSZ"]
     local function module_script()
 		local ClickAndHold = {}
 		ClickAndHold.__index = ClickAndHold
@@ -1913,7 +2126,7 @@ end
 
 -- Fake Local Scripts:
 
-local function IYZNC_fake_script() -- Fake Script: StarterGui.BRX.Open.InitOpen
+local function TNUH_fake_script() -- Fake Script: StarterGui.SUNGSZ.Open.InitOpen
     local script = Instance.new("LocalScript")
     script.Name = "InitOpen"
     script.Parent = Converted["_Open"]
@@ -1949,7 +2162,7 @@ local function IYZNC_fake_script() -- Fake Script: StarterGui.BRX.Open.InitOpen
 	--	Transparency = 1
 	--}):Play()
 end
-local function VTCPJCE_fake_script() -- Fake Script: StarterGui.BRX.Open.OnClick
+local function BILF_fake_script() -- Fake Script: StarterGui.SUNGSZ.Open.OnClick
     local script = Instance.new("LocalScript")
     script.Name = "OnClick"
     script.Parent = Converted["_Open"]
@@ -1963,8 +2176,8 @@ local function VTCPJCE_fake_script() -- Fake Script: StarterGui.BRX.Open.OnClick
     end
 
 	local ts = game:GetService("TweenService")
-	repeat task.wait() until _G.BRX
-	ts:Create(_G.BRX.Menu, TweenInfo.new(0.7, Enum.EasingStyle.Back, Enum.EasingDirection.Out), 
+	repeat task.wait() until _G.SUNGSZ
+	ts:Create(_G.SUNGSZ.Menu, TweenInfo.new(0.7, Enum.EasingStyle.Back, Enum.EasingDirection.Out), 
 		{Position = UDim2.fromScale(0.499, 0.041), Size = UDim2.fromOffset(441, 268)}
 	):Play()
 	local clickCount = 0
@@ -1990,14 +2203,14 @@ local function VTCPJCE_fake_script() -- Fake Script: StarterGui.BRX.Open.OnClick
 		if clickCount == 3 then
 			-- Triple-click detected
 	
-			ts:Create(_G.BRX.Menu, TweenInfo.new(0.7, Enum.EasingStyle.Back, Enum.EasingDirection.Out), 
+			ts:Create(_G.SUNGSZ.Menu, TweenInfo.new(0.7, Enum.EasingStyle.Back, Enum.EasingDirection.Out), 
 				{Position = UDim2.fromScale(0.499, 0.041), Size = UDim2.fromOffset(441, 268)}
 			):Play()
 		end
 	end)
 	
 end
-local function EVNVY_fake_script() -- Fake Script: StarterGui.BRX.Open.Resizer
+local function WXYNGOS_fake_script() -- Fake Script: StarterGui.SUNGSZ.Open.Resizer
     local script = Instance.new("LocalScript")
     script.Name = "Resizer"
     script.Parent = Converted["_Open"]
@@ -2083,10 +2296,10 @@ local function EVNVY_fake_script() -- Fake Script: StarterGui.BRX.Open.Resizer
 	userInputService.InputChanged:Connect(onInputChanged)
 	
 end
-local function RRLK_fake_script() -- Fake Script: StarterGui.BRX.Init
+local function WUAUKU_fake_script() -- Fake Script: StarterGui.SUNGSZ.Init
     local script = Instance.new("LocalScript")
     script.Name = "Init"
-    script.Parent = Converted["_BRX"]
+    script.Parent = Converted["_SUNGSZ"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -2099,9 +2312,40 @@ local function RRLK_fake_script() -- Fake Script: StarterGui.BRX.Init
 	local ts = game:GetService("TweenService")
 	
 	
-	_G.BRX = script.Parent
+	_G.SUNGSZ = script.Parent
+	local COREGUI = game:GetService("CoreGui")
+	function randomString()
+		local length = math.random(10,20)
+		local array = {}
+		for i = 1, length do
+			array[i] = string.char(math.random(32, 126))
+		end
+		return table.concat(array)
+	end
+	local s, e = pcall(function()
+		if get_hidden_gui or gethui then
+			local hiddenUI = get_hidden_gui or gethui
+			script.Parent.Name = randomString()
+			script.Parent.Parent = hiddenUI()
+			print("[SUNGSZ] - Using get_hidden_gui for anti-detection.")
+		elseif (not is_sirhurt_closure) and (syn and syn.protect_gui) then
+			script.Parent.Name = randomString()
+			syn.protect_gui(script.Parent)
+			script.Parent.Parent = COREGUI
+			print("[SUNGSZ] - Using syn.protect_gui for anti-detection.")
+		elseif COREGUI:FindFirstChild('RobloxGui') then
+			script.Parent.Parent = COREGUI.RobloxGui
+			print("[SUNGSZ] - Using RobloxGui for anti-detection.")
+		else
+			warn("[SUNGSZ] - Using CoreGui as anti-detection. This is the most basic coverage and can still be detected.")
+		end
+	end)
 	
-	
+	print("[SUNGSZ] - SUNGSZ is now in " .. tostring(script.Parent:GetFullName()))
+	if not s then
+		warn("[SUNGSZ] - Attempts at anti-detection failed. Using CoreGui as anti-detection.")
+		warn(e)	
+	end
 	
 	script.Parent.SafeAreaCompatibility = Enum.SafeAreaCompatibility.None
 	script.Parent.ScreenInsets = Enum.ScreenInsets.None
@@ -2116,8 +2360,8 @@ local function RRLK_fake_script() -- Fake Script: StarterGui.BRX.Init
 	
 	_G.Modules = {}
 	
-	--require(script.Parent.FUNCTIONS).notification("Thanks for using BRX! To use this hub, triple-click/tap the top region of your screen.")
-	require(script.Parent.FUNCTIONS).notification("V1.0/n- Recent Tool Added. [Tool Adjustment]: Player ESP,Auto Shooting [Not Tested] and Coin Magnet: 2 Coins Collected Every 2 Seconds.")
+	--require(script.Parent.FUNCTIONS).notification("Thanks for using SUNGSZ! To use this hub, triple-click/tap the top region of your screen.")
+	require(script.Parent.FUNCTIONS).notification("Sung Sz")
 	
 	
 	local menudrag = require(script.Parent.DraggableObject).new(script.Parent.Menu)
@@ -2145,12 +2389,301 @@ local function RRLK_fake_script() -- Fake Script: StarterGui.BRX.Init
 	--	lastPos = script.Parent.Menu.Position
 	--end
 	
-	require(script.Parent.DraggableObject).new(script.Parent.Menu.CanvasGroup.Opener, script.Parent.Menu):Enable()
+	--require(script.Parent.DraggableObject).new(script.Parent.Menu.CanvasGroup.Opener, script.Parent.Menu):Enable()
 end
-local function ZQMFNJ_fake_script() -- Fake Script: StarterGui.BRX.Flee the Facility
+local function JDPRURH_fake_script() -- Fake Script: StarterGui.SUNGSZ.FloatingButton.Keybinding
+    local script = Instance.new("LocalScript")
+    script.Name = "Keybinding"
+    script.Parent = Converted["_FloatingButton"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	
+end
+local function KYALNYD_fake_script() -- Fake Script: StarterGui.SUNGSZ.FloatingButton.Invisible
+    local script = Instance.new("LocalScript")
+    script.Name = "Invisible"
+    script.Parent = Converted["_FloatingButton"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	--local ts = game:GetService("TweenService")
+	
+	--local holding = false
+	--local invisible = false
+	
+	
+	
+	--script.Parent.MouseButton1Down:Connect(function()
+	--	holding = true
+	--	task.wait(0.5)
+	--	if holding then
+	--		if not invisible then 
+	--			invisible = true
+	--			ts:Create(script.Parent, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.InOut), {
+	--				BackgroundTransparency = 1,
+	--				TextTransparency = 1
+	--			}):Play()
+	--			ts:Create(script.Parent.UIStroke, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.InOut), {
+	--				Transparency = 0.7
+	--			}):Play()
+	--		else
+	--			invisible = false
+	--			ts:Create(script.Parent, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.InOut), {
+	--				BackgroundTransparency = 0,
+	--				TextTransparency = 0
+	--			}):Play()
+	--			ts:Create(script.Parent.UIStroke, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.InOut), {
+	--				Transparency = 0
+	--			}):Play()
+	--		end
+	--	end
+	--end)
+	
+	--script.Parent.MouseButton1Up:Connect(function()
+	--	holding = false
+	--end)
+end
+local function XHSAU_fake_script() -- Fake Script: StarterGui.SUNGSZ.AddCustomModule.Add.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Add"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local ts = game:GetService("TweenService")
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.TextBox.Text == "" then return end
+		ts:Create(script.Parent.Parent.Parent.Menu.UIScale, TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+			Scale = 1
+		}):Play()
+		ts:Create(script.Parent.Parent, TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+			Position = UDim2.fromScale(0.5, -0.5)
+		}):Play()
+		
+		
+		local lastmodule = _G.Modules[#_G.Modules]
+		require(script.Parent.Parent.Parent.FUNCTIONS).notification("Module is loading...")
+		local newmodule = loadstring(game:HttpGet(script.Parent.Parent.TextBox.Text))()
+		if newmodule["BG_TASK"] then
+			coroutine.wrap(newmodule["BG_TASK"])()
+		end
+		if _G.Modules[#_G.Modules] ~= lastmodule then
+			local newmodule = _G.Modules[#_G.Modules]
+			require(script.Parent.Parent.Parent.FUNCTIONS).notification("New module added: " .. newmodule["Name"])
+			require(script.Parent.Parent.Parent.FUNCTIONS).refreshlist()
+		else
+			require(script.Parent.Parent.Parent.FUNCTIONS).notification("Module failed to load after 5 seconds.")
+		end
+	end)
+end
+local function VVIBB_fake_script() -- Fake Script: StarterGui.SUNGSZ.AddCustomModule.Cancel.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Cancel"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local ts = game:GetService("TweenService")
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		ts:Create(script.Parent.Parent.Parent.Menu.UIScale, TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+			Scale = 1
+		}):Play()
+		ts:Create(script.Parent.Parent, TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+			Position = UDim2.fromScale(0.5, -0.5)
+		}):Play()
+	end)
+end
+local function WFYLTB_fake_script() -- Fake Script: StarterGui.SUNGSZ.Menu.UIStroke.UIGradient.Animator
+    local script = Instance.new("LocalScript")
+    script.Name = "Animator"
+    script.Parent = Converted["_UIGradient3"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local ts = game:GetService("TweenService")
+	
+	ts:Create(script.Parent, TweenInfo.new(
+		10, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut,
+		math.huge, false), {
+			Rotation = -180
+		}):Play()
+end
+local function AJDP_fake_script() -- Fake Script: StarterGui.SUNGSZ.Menu.List.AutoSetup
+    local script = Instance.new("LocalScript")
+    script.Name = "AutoSetup"
+    script.Parent = Converted["_List"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local ts = game:GetService("TweenService")
+	
+	
+	local States = {}
+	
+	local FloatingButtonConnectionsMouse = {}
+	local FloatingButtonConnectionsTouch = {}
+	
+	task.wait(0.1)
+	
+	AREA = script.Parent.Parent.Area
+	
+	local function calculateWidth(n)
+		if n <= 3 then
+			return 30
+		else
+			local base = 30
+			local additional = math.floor((n - 3) / 3) * 30
+			return base + additional
+		end
+	end
+	
+	local listlayout = Instance.new("UIListLayout")
+	listlayout.Parent = AREA
+	listlayout.Padding = UDim.new(0, 10)
+	listlayout.FillDirection = Enum.FillDirection.Vertical
+	listlayout.SortOrder = Enum.SortOrder.LayoutOrder
+	listlayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+	
+	
+	
+	
+	task.wait(.5) -- magic number to wait modules to load lmao
+	task.spawn(function()
+		require(script.Parent.Parent.Parent.FUNCTIONS).refreshlist()
+		for i = 1, 10 do
+			task.wait(.1)
+			require(script.Parent.Parent.Parent.FUNCTIONS).refreshlist()
+		end
+	end)
+end
+local function LMQTO_fake_script() -- Fake Script: StarterGui.SUNGSZ.Menu.AddCustomModule.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_AddCustomModule1"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local ts = game:GetService("TweenService")
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		ts:Create(script.Parent.Parent.UIScale, TweenInfo.new(0.6, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+			Scale = 0.9
+		}):Play()
+		ts:Create(script.Parent.Parent.Parent.AddCustomModule, TweenInfo.new(0.6, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+			Position = UDim2.fromScale(0.5, 0.5)
+		}):Play()
+	end)
+end
+local function MGVWMZA_fake_script() -- Fake Script: StarterGui.SUNGSZ.Menu.Close.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Close"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local ts = game:GetService("TweenService")
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		print("-")
+		ts:Create(_G.SUNGSZ.Menu, TweenInfo.new(0.4, Enum.EasingStyle.Circular, Enum.EasingDirection.Out), 
+			{Size = UDim2.fromOffset(55, 55)}
+		):Play()
+		
+		script.Parent.Parent.CanvasGroup.Visible = true
+		ts:Create(script.Parent.Parent.CanvasGroup, TweenInfo.new(0.6, Enum.EasingStyle.Circular, Enum.EasingDirection.Out), {
+			GroupTransparency = 0
+		}):Play()
+	end)
+end
+local function AFSHYE_fake_script() -- Fake Script: StarterGui.SUNGSZ.Menu.CanvasGroup.Opener.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Opener"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local ts = game:GetService("TweenService")
+	local ready = true
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if not ready then return end
+		ready = false
+		ts:Create(_G.SUNGSZ.Menu, TweenInfo.new(0.4, Enum.EasingStyle.Circular, Enum.EasingDirection.Out), 
+			{Size = UDim2.fromOffset(441, 268)}
+		):Play()
+	
+		
+		ts:Create(script.Parent.Parent, TweenInfo.new(0.6, Enum.EasingStyle.Circular, Enum.EasingDirection.Out), {
+			GroupTransparency = 1
+		}):Play()
+		task.wait(0.6)
+		script.Parent.Parent.Visible = false
+		ready = true
+	end)
+end
+local function SYRG_fake_script() -- Fake Script: StarterGui.SUNGSZ.Flee the Facility
     local script = Instance.new("LocalScript")
     script.Name = "Flee the Facility"
-    script.Parent = Converted["_BRX"]
+    script.Parent = Converted["_SUNGSZ"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -2457,339 +2990,10 @@ local function ZQMFNJ_fake_script() -- Fake Script: StarterGui.BRX.Flee the Faci
 	
 	_G.Modules[2] = module
 end
-local function VPRJWSR_fake_script() -- Fake Script: StarterGui.BRX.Universal
-    local script = Instance.new("LocalScript")
-    script.Name = "Universal"
-    script.Parent = Converted["_BRX"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local module = {}
-	module["gameId"] = 0 -- Restrict module to a certain game ID only. 0 allows all games.
-	if (module["gameId"] ~= game.GameId) and module["gameId"] ~= 0 then
-		script.Enabled = true
-	end
-	
-	local ts = game:GetService("TweenService")
-	local uis = game:GetService("UserInputService")
-	local fu = require(script.Parent.FUNCTIONS)
-	
-	local loopfovandws = false
-	local ws = 16
-	local fov = 70
-	
-	local hidden = false
-	
-	task.spawn(function()
-		game:GetService("RunService").RenderStepped:Connect(function()
-			if loopfovandws then
-				workspace.CurrentCamera.FieldOfView = fov
-				if game.Players.LocalPlayer.Character then
-					if game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
-						game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = ws
-					end
-				end
-			end
-		end)
-	end)
-	
-	uis.InputBegan:Connect(function(inp, proc)
-		if proc then return end
-		
-		if uis:IsKeyDown(Enum.KeyCode.LeftControl) and inp.KeyCode == Enum.KeyCode.Y and hidden then
-			hidden = false
-			ts:Create(script.Parent.Menu.UIScale, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {
-				Scale = 1
-			}):Play()
-		end
-	end)
-	
-	if uis.AccelerometerEnabled then
-		uis.DeviceAccelerationChanged:Connect(function(acc)
-			if hidden and acc.Position.Magnitude > 50 then
-				hidden = false
-				ts:Create(script.Parent.Menu.UIScale, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {
-					Scale = 1
-				}):Play()
-			end 
-		end)
-	end
-	
-	module["Name"] = "Universal"
-	
-	local ts = game:GetService("TweenService")
-	
-	table.insert(module, {
-		Type = "Text",
-		Args = {"Welcome to BRX! The open, free script hub."}
-	})
-	table.insert(module, {
-		Type = "Button",
-		Args = {"Follow My Roblox.", function(Self)
-			if setclipboard then setclipboard("givepetroblox") end
-			fu.notification('Roblox username has been copied to clipboard!')
-		end,}
-	})
-	table.insert(module, {
-		Type = "Text",
-		Args = {"---"}
-	})
-	
-	table.insert(module, {
-		Type = "Input",
-		Args = {"Hitbox expander", "Expand everyone's hitbox", function(Self, ToExpand)
-			local players = game:GetService("Players"):GetPlayers()
-			for i,v in ipairs(players) do
-				if v ~= game.Players.LocalPlayer and v.Character:FindFirstChild('HumanoidRootPart') then
-					local sizeArg = tonumber(ToExpand)
-					local Size = Vector3.new(sizeArg,sizeArg,sizeArg)
-					local Root = v.Character:FindFirstChild('HumanoidRootPart')
-					if Root:IsA("BasePart") then
-						if not ToExpand or sizeArg == 1 then
-							Root.Size = Vector3.new(2,1,1)
-							Root.Transparency = 0.2
-						else
-							Root.Size = Size
-							Root.Transparency = 0.2
-						end
-						Root.CanCollide = false
-					end
-				end
-			end
-			fu.notification("Hitboxes expanded.")
-		end,}
-	})
-	
-	table.insert(module, {
-		Type = "Input",
-		Args = {"Walkspeed", "Set speed", function(Self, speed)
-			local lp = game:GetService("Players").LocalPlayer
-			local char = lp.Character
-			if not char then fu.notification("No character!") return end
-			local hu = char:FindFirstChildOfClass("Humanoid")
-			if not hu then fu.notification("No humanoid on your character..?") return end
-			hu.WalkSpeed = tonumber(speed) or 16
-			fu.notification("Walkspeed set.")
-			ws = tonumber(speed) or 16
-		end,}
-	})
-	
-	table.insert(module, {
-		Type = "Input",
-		Args = {"FOV change", "Set FOV", function(Self, tofov)
-			if not tonumber(tofov) then fu.notification("Not a number. Setting to default.") end
-			ts:Create(workspace.CurrentCamera, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {
-				FieldOfView = tonumber(tofov) or 70
-			}):Play()
-			fov = tonumber(tofov) or 70
-		end,}
-	})
-	
-	table.insert(module, {
-		Type = "Toggle",
-		Args = {"Loop walkspeed and FOV", function(Self, state)
-			loopfovandws = state
-		end,}
-	})
-	
-	table.insert(module, {
-		Type = "Button",
-		Args = {"Hide BRX", function(Self)
-			if uis.KeyboardEnabled then
-				ts:Create(script.Parent.Menu.UIScale, TweenInfo.new(0.6, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {
-					Scale = 0
-				}):Play()
-				hidden=true
-				fu.notification("Press CTRL+Y to bring back the menu.")
-			elseif uis.AccelerometerEnabled then
-				ts:Create(script.Parent.Menu.UIScale, TweenInfo.new(0.6, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {
-					Scale = 0
-				}):Play()
-				hidden=true
-				fu.notification("Shake your device to bring back the menu.")
-			else
-				fu.notification("Can't hide BRX!") -- how else are you gonna open???
-			end
-		end,}
-	}
-	)
-	
-	table.insert(module, {
-		Type = "Button",
-		Args = {"FPS Boost", function(Self)
-			fu.dialog("FPS boosting", "FPS boosting can have unpredictable effects. You may instead lag more using this!", {"FPS boost anyway", "Nevermind"})
-			local result = fu.waitfordialog()
-			fu.closedialog()
-			if result == "FPS boost anyway" then
-				local Terrain = workspace:FindFirstChildOfClass('Terrain')
-				Terrain.WaterWaveSize = 0
-				Terrain.WaterWaveSpeed = 0
-				Terrain.WaterReflectance = 0
-				Terrain.WaterTransparency = 0
-				game.Lighting.GlobalShadows = false
-				game.Lighting.FogEnd = 9e9
-				pcall(function()
-					settings().Rendering.QualityLevel = 1
-				end)
-				for i,v in pairs(game:GetDescendants()) do
-					if v:IsA("Part") or v:IsA("UnionOperation") or v:IsA("MeshPart") or v:IsA("CornerWedgePart") or v:IsA("TrussPart") then
-						v.Material = "Plastic"
-						v.Reflectance = 0
-					elseif v:IsA("Decal") then
-						v.Transparency = 1
-					elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
-						v.Lifetime = NumberRange.new(0)
-					elseif v:IsA("Explosion") then
-						v.BlastPressure = 1
-						v.BlastRadius = 1
-					end
-				end
-				for i,v in pairs(game.Lighting:GetDescendants()) do
-					if v:IsA("BlurEffect") or v:IsA("SunRaysEffect") or v:IsA("ColorCorrectionEffect") or v:IsA("BloomEffect") or v:IsA("DepthOfFieldEffect") then
-						v.Enabled = false
-					end
-				end
-				workspace.DescendantAdded:Connect(function(child)
-					task.spawn(function()
-						if child:IsA('ForceField') then
-							game:GetService("RunService").Heartbeat:Wait()
-							child:Destroy()
-						elseif child:IsA('Sparkles') then
-							game:GetService("RunService").Heartbeat:Wait()
-							child:Destroy()
-						elseif child:IsA('Smoke') or child:IsA('Fire') then
-							game:GetService("RunService").Heartbeat:Wait()
-							child:Destroy()
-						end
-					end)
-				end)
-			end
-		end,}
-	})
-	
-	table.insert(module, {
-		Type = "Button",
-		Args = {"Open developer console (debugging)", function(Self)
-			game.StarterGui:SetCore("DevConsoleVisible", true)
-			--_G.BRX.Open.UIStroke.Transparency = 0
-			--_G.BRX.Open.TextTransparency = 0
-			--ts:Create(_G.BRX.Open, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {
-			--	Position = UDim2.fromScale(0.5, 0.903)
-			--}):Play()
-	
-			--ts:Create(_G.BRX.Open.UIStroke, TweenInfo.new(1), {
-			--	Transparency = 1
-			--}):Play()
-			--ts:Create(_G.BRX.Open, TweenInfo.new(1), {
-			--	TextTransparency = 1
-			--}):Play()
-		end}
-	}
-	)
-	
-	table.insert(module, {
-		Type = "Button",
-		Args = {"SELF-DESTRUCT", function(Self)
-			fu.notification("See you later!")
-			task.wait(1.5)
-			script.Parent:Destroy() -- Scary!
-		end}
-	}
-	)
-	--	Type = "Button",
-	--	Args = {"Move BRX trigger to the top", function(Self)
-	--		_G.BRX.Open.UIStroke.Transparency = 0
-	--		_G.BRX.Open.TextTransparency = 0
-	--		ts:Create(_G.BRX.Open, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {
-	--			Position = UDim2.fromScale(0.5, 0.063)
-	--		}):Play()
-	
-	--		ts:Create(_G.BRX.Open.UIStroke, TweenInfo.new(1), {
-	--			Transparency = 1
-	--		}):Play()
-	--		ts:Create(_G.BRX.Open, TweenInfo.new(1), {
-	--			TextTransparency = 1
-	--		}):Play()
-	--	end}
-	--}
-	
-	_G.Modules[1] = module
-end
-local function KWGZIM_fake_script() -- Fake Script: StarterGui.BRX.FloatingButton.Keybinding
-    local script = Instance.new("LocalScript")
-    script.Name = "Keybinding"
-    script.Parent = Converted["_FloatingButton"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	
-end
-local function GBKZNJA_fake_script() -- Fake Script: StarterGui.BRX.FloatingButton.Invisible
-    local script = Instance.new("LocalScript")
-    script.Name = "Invisible"
-    script.Parent = Converted["_FloatingButton"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	--local ts = game:GetService("TweenService")
-	
-	--local holding = false
-	--local invisible = false
-	
-	
-	
-	--script.Parent.MouseButton1Down:Connect(function()
-	--	holding = true
-	--	task.wait(0.5)
-	--	if holding then
-	--		if not invisible then 
-	--			invisible = true
-	--			ts:Create(script.Parent, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.InOut), {
-	--				BackgroundTransparency = 1,
-	--				TextTransparency = 1
-	--			}):Play()
-	--			ts:Create(script.Parent.UIStroke, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.InOut), {
-	--				Transparency = 0.7
-	--			}):Play()
-	--		else
-	--			invisible = false
-	--			ts:Create(script.Parent, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.InOut), {
-	--				BackgroundTransparency = 0,
-	--				TextTransparency = 0
-	--			}):Play()
-	--			ts:Create(script.Parent.UIStroke, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.InOut), {
-	--				Transparency = 0
-	--			}):Play()
-	--		end
-	--	end
-	--end)
-	
-	--script.Parent.MouseButton1Up:Connect(function()
-	--	holding = false
-	--end)
-end
-local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Mystery 2
+local function BKHQP_fake_script() -- Fake Script: StarterGui.SUNGSZ.Murder Mystery 2
     local script = Instance.new("LocalScript")
     script.Name = "Murder Mystery 2"
-    script.Parent = Converted["_BRX"]
+    script.Parent = Converted["_SUNGSZ"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -2809,19 +3013,18 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
 	local shootOffset = 2
 	
 	local autoGetDroppedGun = false
-    local pickUpDistanceMeters = 150 -- Set the distance threshold in meters
-    local pickUpDistanceStuds = pickUpDistanceMeters * 3.57 -- Calculating Huhu
-	local godModeEnabled = false
+	local simulateKnifeThrow = false
 	
 	local localplayer = game:GetService("Players").LocalPlayer
 	
 	local playerData = {}
 	
 	local phs = game:GetService("PathfindingService")
+	local ts = game:GetService("TweenService")
 	
 	local claimedCoins = {}
 	
-	local fu = require(_G.BRX.FUNCTIONS)
+	local fu = require(_G.SUNGSZ.FUNCTIONS)
 	
 	local fadeEvent = game.ReplicatedStorage:WaitForChild("Remotes"):WaitForChild("Gameplay"):WaitForChild("Fade", 5)
 	if fadeEvent then
@@ -2935,23 +3138,23 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
 	--task.spawn(function() 
 	--	if game:GetService("RunService"):IsStudio() then return end -- :)
 	
-	--	local OldNameCall = nil
+		--local OldNameCall = nil
 	
-	--	OldNameCall = hookmetamethod(game, "__namecall", function(Self, ...)
-	--		local Args = {...}
-	--		local NamecallMethod = getnamecallmethod()
+		--OldNameCall = hookmetamethod(game, "__namecall", function(Self, ...)
+		--	local Args = {...}
+		--	local NamecallMethod = getnamecallmethod()
 	
-	--		if NamecallMethod == "InvokeServer" and Args[1] == 1 and sheriffAimbot then
-	--			if not findMurderer() then
-	--				print("No murderer to be shot!")
-	--			else
-	--				print("Shot - Intercepting shot to murderer")
-	--				Args[2] = findMurderer().Character:FindFirstChild("HumanoidRootPart").Position
-	--			end
-	--		end
+		--	if NamecallMethod == "InvokeServer" and Args[1] == 1 and sheriffAimbot then
+		--		if not findMurderer() then
+		--			print("No murderer to be shot!")
+		--		else
+		--			print("Shot - Intercepting shot to murderer")
+		--			Args[2] = findMurderer().Character:FindFirstChild("HumanoidRootPart").Position
+		--		end
+		--	end
 	
-	--		return OldNameCall(Self, unpack(Args))
-	--	end)
+		--	return OldNameCall(Self, unpack(Args))
+		--end)
 	
 	--end)
 	
@@ -2969,7 +3172,7 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
 			until findMurderer()
 			local listplayers = game.Players:GetChildren()
 			for _, player in ipairs(listplayers) do
-				if player.Character ~= nil then
+				if  player.Character ~= nil then
 					local character = player.Character
 					if not character:FindFirstChild("PlayerESP") then
 						local a = Instance.new("Highlight", script.Parent)
@@ -2982,22 +3185,17 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
 								local mbgui = script.Parent.MurdererBGUI:Clone()
 								mbgui.Enabled = true
 								mbgui.Name = "AppliedMurdererBGUI"
-								mbgui.Parent = _G.BRX
+								mbgui.Parent = _G.SUNGSZ
 								mbgui.Adornee = character
 								a.FillColor = Color3.fromRGB(255,0,0)
 							elseif player == findSheriff() then
-								local sbgui = script.Parent.SheriffBGUI:Clone()
-								sbgui.Enabled = true
-								sbgui.Name = "AppliedSheriffBGUI"
-								sbgui.Parent = _G.BRX
-								sbgui.Adornee = character
 								a.FillColor = Color3.fromRGB(0, 150, 255)
 							else
 								a.FillColor = Color3.fromRGB(0,255,0)
 							end
 							if a then
 								if not player then return end
-								a.Adornee = player.Character or player.CharacterAdded:Wait()
+								a.Adornee = player.Character or player.CharactedAdded:Wait()
 							end
 						end)
 					end
@@ -3006,14 +3204,14 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
 			fu.notification("Player ESP reloaded.")
 		end
 	end)
-
+	
 	workspace.ChildRemoved:Connect(function(ch)
 		if ch.Name == "Normal" and playerESP then
 			fu.notification("Game ended, removing Player ESPs.")
 			playerData = {}
 			for _, v in ipairs(script.Parent:GetChildren()) do if v.Name == "PlayerESP" then v:Destroy() end end
-			if script.Parent:FindFirstChild("AppliedMurdererBGUI") then script.Parent:FindFirstChild("AppliedMurdererBGUI"):Destroy() end
-			if script.Parent:FindFirstChild("DBGUIClone") then script.Parent:FindFirstChild("DBGUIClone"):Destroy() end
+			if _G.SUNGSZ:FindFirstChild("AppliedMurdererBGUI") then _G.SUNGSZ:FindFirstChild("AppliedMurdererBGUI"):Destroy() end
+			if _G.SUNGSZ:FindFirstChild("DGBGUIClone") then _G.SUNGSZ:FindFirstChild("DGBGUIClone"):Destroy() end
 		end
 	end)
 	
@@ -3028,6 +3226,13 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
 			bguiclone.Enabled = true
 			bguiclone.Name = "DGBGUIClone"
 			fu.notification("Gun has been dropped! Find a yellow highlight.")
+			if autoGetDroppedGun then
+				if not workspace:FindFirstChild("GunDrop") then fu.notification("No dropped gun to be teleported to.") return end
+				local previousPosition = localplayer.Character:GetPivot()
+				localplayer.Character:MoveTo(workspace:FindFirstChild("GunDrop").Position)
+				localplayer.Backpack.ChildAdded:Wait()
+				localplayer.Character:PivotTo(previousPosition)
+			end
 		end
 	end)
 	
@@ -3041,6 +3246,30 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
 		end
 	end)
 	
+	function getClosestModelToPlayer(player, models)
+		local closestModel = nil
+		local closestDistance = math.huge 
+	
+		local playerPosition = player.Character.HumanoidRootPart.Position
+	
+		for _, model in ipairs(models) do
+			local modelPosition = model:GetPivot().Position  -- Use GetPivot here
+			local distance = (modelPosition - playerPosition).Magnitude
+			if distance < closestDistance then
+				closestDistance = distance
+				closestModel = model
+			end
+		end
+	
+		local returningResult = {closestModel, closestDistance}
+		setmetatable(returningResult, {
+			__tostring = function(t)
+				return closestModel
+			end,
+		})
+	
+		return returningResult
+	end
 	
 	-- Coin autocollect
 	task.spawn(
@@ -3049,107 +3278,150 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
 				if not coinAutoCollect then continue end
 				
 				if workspace:FindFirstChild("Normal") then
-					if workspace:FindFirstChild("Normal"):FindFirstChild("CoinContainer") then
-						for _, coin in ipairs(workspace:FindFirstChild("Normal"):FindFirstChild("CoinContainer"):GetChildren()) do
-							if claimedCoins[coin] then continue end
-							if not coin then continue end
-							local coinPosition = coin.Position
-							--if (coinPosition - localplayer.Character:GetPivot().Position).Magnitude > 30 then return end
-							--local characterRootPart = localplayer.Character.HumanoidRootPart
-							--local rayDirection = coinPosition * 3
-	
-							--local raycastParams = RaycastParams.new()
-							--raycastParams.FilterType = Enum.RaycastFilterType.Exclude
-							--raycastParams.FilterDescendantsInstances = {localplayer.Character}
-	
-							--local hit = workspace:Raycast(characterRootPart.Position, rayDirection, raycastParams)
-	
-							--if not hit or hit.Instance == coin then -- Check if nothing collides or if it collides with the coin
-							localplayer.Character:MoveTo(Vector3.new(coin:GetPivot().X, coin:GetPivot().Y, coin:GetPivot().Z))
-							claimedCoins[coin] = true
-							--end
-	
-							-- just immediately move the character idgaf lmao
+					if workspace:FindFirstChild("Normal"):FindFirstChild("CoinContainer") and #workspace:FindFirstChild("Normal"):FindFirstChild("CoinContainer"):GetChildren() > 1 then
+						local closestCoin = getClosestModelToPlayer(localplayer, workspace:FindFirstChild("Normal"):FindFirstChild("CoinContainer"):GetChildren())
+						if closestCoin then
+							if not localplayer.Character:FindFirstChild("HumanoidRootPart") then continue end
+							local toclosestcoin = ts:Create(localplayer.Character:FindFirstChild("HumanoidRootPart"), TweenInfo.new(0.4, Enum.EasingStyle.Linear), {
+								CFrame = closestCoin:GetPivot()
+							})
+							toclosestcoin:Play()
+							toclosestcoin.Completed:Wait()
+							task.wait(0.1)
+							closestCoin:Destroy() -- so we wont try to get it anymore
+							--localplayer.Character:MoveTo(Vector3.new(closestCoin:GetPivot().X, closestCoin:GetPivot().Y, closestCoin:GetPivot().Z))
+							claimedCoins[closestCoin] = true
 						end
+						
+						--for _, coin in ipairs(workspace:FindFirstChild("Normal"):FindFirstChild("CoinContainer"):GetChildren()) do
+						--	if claimedCoins[coin] then continue end
+						--	if not coin then continue end
+						--	local coinPosition = coin.Position
+						--	--if (coinPosition - localplayer.Character:GetPivot().Position).Magnitude > 30 then return end
+						--	--local characterRootPart = localplayer.Character.HumanoidRootPart
+						--	--local rayDirection = coinPosition * 3
+	
+						--	--local raycastParams = RaycastParams.new()
+						--	--raycastParams.FilterType = Enum.RaycastFilterType.Exclude
+						--	--raycastParams.FilterDescendantsInstances = {localplayer.Character}
+	
+						--	--local hit = workspace:Raycast(characterRootPart.Position, rayDirection, raycastParams)
+	
+						--	--if not hit or hit.Instance == coin then -- Check if nothing collides or if it collides with the coin
+						--	if not localplayer.Character:FindFirstChild("HumanoidRootPart") then continue end
+						--	local tocoin = ts:Create(localplayer.Character:FindFirstChild("HumanoidRootPart"), TweenInfo.new(0.2), {
+						--		CFrame = coin:GetPivot()
+						--	})
+						--	tocoin:Play()
+						--	tocoin.Completed:Wait()
+						--	task.wait(0.3)
+						--	--localplayer.Character:MoveTo(Vector3.new(coin:GetPivot().X, coin:GetPivot().Y, coin:GetPivot().Z))
+						--	claimedCoins[coin] = true
+						--	--end
+	
+						--	if not coinAutoCollect then
+						--		break
+						--	end
+						--end
 					end
 				end
 			end
 		end
 	)
 	
-	local positionHistory = {}
-	local velocityHistory = {}
-	local historySize = 10  -- Number of past positions/velocities to consider
+	--local positionHistory = {}
+	--local velocityHistory = {}
+	--local historySize = 10  -- Number of past positions/velocities to consider
 	
-	local function resetHistory()
-		positionHistory = {}
-		velocityHistory = {}
-	end
+	--local function resetHistory()
+	--	positionHistory = {}
+	--	velocityHistory = {}
+	--end
 	
-	local function updateHistory(character)
-		if not character then return end
-		local hrp = character:FindFirstChild("HumanoidRootPart")
-		if not hrp then return end
+	--local function updateHistory(character)
+	--	if not character then return end
+	--	local hrp = character:FindFirstChild("HumanoidRootPart")
+	--	if not hrp then return end
 	
-		-- Update position history
-		table.insert(positionHistory, hrp.Position)
-		if #positionHistory > historySize then
-			table.remove(positionHistory, 1)
-		end
+	--	-- Update position history
+	--	table.insert(positionHistory, hrp.Position)
+	--	if #positionHistory > historySize then
+	--		table.remove(positionHistory, 1)
+	--	end
 	
-		-- Update velocity history
-		table.insert(velocityHistory, hrp.AssemblyLinearVelocity)
-		if #velocityHistory > historySize then
-			table.remove(velocityHistory, 1)
-		end
-	end
+	--	-- Update velocity history
+	--	table.insert(velocityHistory, hrp.AssemblyLinearVelocity)
+	--	if #velocityHistory > historySize then
+	--		table.remove(velocityHistory, 1)
+	--	end
+	--end
 	
-	local function averageVelocity()
-		local total = Vector3.new(0, 0, 0)
-		for _, v in ipairs(velocityHistory) do
-			total = total + v
-		end
-		return total / #velocityHistory
-	end
+	--local function averageVelocity()
+	--	local total = Vector3.new(0, 0, 0)
+	--	for _, v in ipairs(velocityHistory) do
+	--		total = total + v
+	--	end
+	--	return total / #velocityHistory
+	--end
 	
-	local function getPredictedPosition(player, shootOffset, murd)
+	local function getPredictedPosition(player, shootOffset)
 		pcall(function()
 			player = player.Character
 			if not player.Character then fu.notification("No murderer to predict position.") return end
 		end)
 		local playerHRP = player:FindFirstChild("HumanoidRootPart")
-		if not playerHRP then
+		local playerHum = player:FindFirstChild("Humanoid")
+		if not playerHRP or not playerHum then
 			return Vector3.new(0,0,0), "Could not find the player's HumanoidRootPart."
 		end
 	
 		local playerPosition = playerHRP.Position
 		local velocity = Vector3.new()
-		if murd then
-			velocity = averageVelocity()
-		else
-			velocity = playerHRP.AssemblyLinearVelocity
-		end
-		local playerMoveDirection = player.Humanoid.MoveDirection
+		velocity = playerHRP.AssemblyLinearVelocity
+		local playerMoveDirection = playerHum.MoveDirection
+		local playerLookVec = playerHRP.CFrame.LookVector
+		local yVelFactor = velocity.Y > 0 and -1 or 0.5
+		--local stationaryY = 0
+		--if playerHum.FloorMaterial == Enum.Material.Air then
+		--	yVelFactor = 0
+		--	stationaryY = 1
+		--end
 	
-		-- Predict future position considering average velocity and move direction with strengths
-		local predictedPosition = playerPosition 
-			+ (velocity * Vector3.new(1, 1, 1)) * (shootOffset / 15) * 1
-			+ playerMoveDirection * shootOffset * 1
+		--local heightJump = playerHum.JumpPower^2 / (2*workspace.Gravity)
+	
+	
+		-- this took some big brain math
+		-- skid this if you want lmfao (like anyones going to anyways)
+		--local predictedPosition = playerPosition
+		--	+ Vector3.new(0, 1, 0) * shootOffset
+		--	+ (velocity * Vector3.new(1, yVelFactor, 1)) * (shootOffset / 15)
+		--	+ playerMoveDirection * shootOffset
+		--	- playerHRP.CFrame.LookVector * shootOffset * math.clamp(playerMoveDirection.Magnitude, 0, 1.5)
+		
+		
+		
+		local predictedPosition = playerHRP.Position + ((velocity * Vector3.new(0, 0.5, 0))) * (shootOffset / 15) +playerMoveDirection * shootOffset
+		-- failed so hard i had to revert back to v1.11 :sob:
+		
+		--predictedPosition = Vector3.new(predictedPositiomurdererHRP.Position + ((murdererVelocity * Vector3.new(0, 0.5, 0))) * (shootOffset / 15) + murderer.Character.Humanoid.MoveDirection * shootOffsetn.X, math.clamp(predictedPosition.Y, playerPosition.Y - 2, playerPosition.Y + 2), predictedPosition.Z)
+	
 	
 		return predictedPosition
 	end
 	
-	-- Continuous update using RunService
-	local RunService = game:GetService("RunService")
 	
-	RunService.Heartbeat:Connect(function()
-		local murderer = findMurderer()
-		if murderer then
-			updateHistory(murderer.Character)
-		else
-			resetHistory()
-		end
-	end)
+	
+	---- Continuous update using RunService
+	--local RunService = game:GetService("RunService")
+	
+	--RunService.Heartbeat:Connect(function()
+	--	local murderer = findMurderer()
+	--	if murderer then
+	--		updateHistory(murderer.Character)
+	--	else
+	--		resetHistory()
+	--	end
+	--end)
 	
 	task.spawn(function()
 		while task.wait(1) do
@@ -3202,108 +3474,86 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
 	
 	table.insert(module, {
 		Type = "Text",
-		Args = {"ESPs"}
+		Args = {"Search Channel Name in youtube: Sung Sz"}
 	})
 	
-
-table.insert(module, {
-	Type = "ButtonGrid",
-	Toggleable = true,
-	Args = {2, {
-		Players = function()
-			local parent = script.Parent
-			local function destroyByName(name)
-				for _, child in ipairs(parent:GetChildren()) do
-					if child.Name == name then
-						child:Destroy()
+	
+	table.insert(module, {
+		Type = "ButtonGrid",
+		Toggleable = true,
+		Args = {2, {
+			Players = function()
+				if script.Parent:FindFirstChild("PlayerESP") then
+					playerESP = false
+					for _, i in ipairs(script.Parent:GetChildren()) do if i.Name=="PlayerESP" then i:Destroy() end end
+					for _, i in ipairs(script.Parent:GetChildren()) do if i.Name=="DGBGUIClone" then i:Destroy() end end	
+				else
+					playerESP = true
+					if not findMurderer() or not findSheriff() then
+						fu.notification("No roles yet. Waiting for roles...")
+						repeat
+							task.wait(1)
+						until findSheriff() or findMurderer()
+					end
+					local listplayers = game.Players:GetChildren()
+					for _, player in ipairs(listplayers) do
+						if  player.Character ~= nil then
+							local character = player.Character
+							if not character:FindFirstChild("PlayerESP") then
+								local a = Instance.new("Highlight", script.Parent)
+								a.Name = "PlayerESP"
+								a.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+								a.Adornee = character
+								a.FillColor = Color3.fromRGB(255, 255, 255)
+								task.spawn(function()
+									if player == findMurderer() then
+										local mbgui = script.Parent.MurdererBGUI:Clone()
+										mbgui.Enabled = true
+										mbgui.Name = "AppliedMurdererBGUI"
+										mbgui.Parent = _G.SUNGSZ
+										mbgui.Adornee = character
+										a.FillColor = Color3.fromRGB(255,0,0)
+									elseif player == findSheriff() then
+										a.FillColor = Color3.fromRGB(0, 150, 255)
+									else
+										a.FillColor = Color3.fromRGB(0,255,0)
+									end
+									if a then
+										if not player then return end
+										a.Adornee = player.Character or player.CharactedAdded:Wait()
+									end
+								end)
+							end
+						end
 					end
 				end
-			end
-
-			if parent:FindFirstChild("PlayerESP") then
-				playerESP = false
-				destroyByName("PlayerESP")
-				destroyByName("DGBGUIClone")
-			else
-				playerESP = true
-				if not findMurderer() or not findSheriff() then
-					fu.notification("No roles yet. Waiting for roles...")
-					repeat
-						task.wait(1)
-					until findSheriff() or findMurderer()
-				end
-
-				for _, player in ipairs(game.Players:GetPlayers()) do
-					local character = player.Character
-					if character and not character:FindFirstChild("PlayerESP") then
-						local highlight = Instance.new("Highlight")
-						highlight.Name = "PlayerESP"
-						highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
-						highlight.FillColor = Color3.fromRGB(255, 255, 255)
-						highlight.Adornee = character
-						highlight.Parent = parent
-
-						task.spawn(function()
-							if player == findMurderer() then
-								local mbgui = parent.MurdererBGUI:Clone()
-								mbgui.Enabled = true
-								mbgui.Name = "AppliedMurdererBGUI"
-								mbgui.Parent = _G.BRX
-								mbgui.Adornee = character
-								highlight.FillColor = Color3.fromRGB(255, 0, 0)
-							elseif player == findSheriff() then
-								highlight.FillColor = Color3.fromRGB(0, 150, 255)
-							else
-								highlight.FillColor = Color3.fromRGB(0, 255, 0)
-							end
-							if highlight then
-								if not player then return end
-								highlight.Adornee = player.Character or player.CharacterAdded:Wait()
-							end
-						end)
-					end
-				end
-			end
-		end,
+			end,
 	
 			Dropped_Gun = function()
-	local parent = script.Parent
-	local function destroyByName(name)
-		for _, child in ipairs(parent:GetChildren()) do
-			if child.Name == name then
-				child:Destroy()
-			end
-		end
-	end
-
-	if parent:FindFirstChild("GunESP") then
-		destroyByName("GunESP")
-		destroyByName("DGBGUIClone")
-	else
-		local gunesp = Instance.new("Highlight")
-		gunesp.OutlineTransparency = 1
-		gunesp.FillColor = Color3.fromRGB(255, 255, 0)
-		gunesp.Name = "GunESP"
-		gunesp.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
-		gunesp.Enabled = false
-		gunesp.Parent = parent
-
-		local gunDrop = workspace:FindFirstChild("GunDrop")
-		if gunDrop then
-			gunesp.Adornee = gunDrop
-			gunesp.Enabled = true
-
-			local bguiclone = parent.DroppedGunBGUI:Clone()
-			bguiclone.Parent = parent
-			bguiclone.Adornee = gunDrop
-			bguiclone.Enabled = true
-			bguiclone.Name = "DGBGUIClone"
-
-			fu.notification("Gun has been dropped! Find a yellow highlight.")
-		end
-	end
-end,
-
+				if script.Parent:FindFirstChild("GunESP") then
+					if _G.SUNGSZ:FindFirstChild("GunESP") then _G.SUNGSZ:FindFirstChild("GunESP"):Destroy() end
+					if _G.SUNGSZ:FindFirstChild("DGBGUIClone") then _G.SUNGSZ:FindFirstChild("DGBGUIClone"):Destroy() end
+				else
+					local gunesp = Instance.new("Highlight", script.Parent)
+					gunesp.OutlineTransparency = 1
+					gunesp.FillColor = Color3.fromRGB(255, 255, 0)
+					gunesp.Name = "GunESP"
+					gunesp.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+					gunesp.Enabled = false
+					if workspace:FindFirstChild("GunDrop") then
+						gunesp.Adornee = workspace:FindFirstChild("GunDrop")
+						gunesp.Enabled = true
+						local bguiclone = script.Parent.DroppedGunBGUI:Clone()
+						bguiclone.Parent = script.Parent
+						bguiclone.Adornee = workspace:FindFirstChild("GunDrop")
+						bguiclone.Enabled = true
+						bguiclone.Name = "DGBGUIClone"
+						fu.notification("Gun has been dropped! Find a yellow highlight.")
+					end
+	
+				end
+			end,
+	
 			--Sheriff_Aimbot = function()
 			--	if sheriffAimbot then
 			--		sheriffAimbot = false
@@ -3317,605 +3567,20 @@ end,
 	
 	table.insert(module, {
 		Type = "Text",
-		Args = {"Tools"}
+		Args = {"Sung Sz Channel Youtube"}
 	})
 	
 	
 	table.insert(module, {
-    Type = "Button",
-    Args = {"Shoot murderer", function(Self)
-        if findSheriff() ~= localplayer then 
-            fu.notification("You're not sheriff/hero.") 
-            return 
-        end
-
-        local murderer = findMurderer()
-        if not murderer then
-            fu.notification("No murderer to shoot.")
-            return
-        end
-
-        if not localplayer.Character:FindFirstChild("Gun") then
-            local hum = localplayer.Character:FindFirstChild("Humanoid")
-            if localplayer.Backpack:FindFirstChild("Gun") then
-                hum:EquipTool(localplayer.Backpack:FindFirstChild("Gun"))
-            else
-                fu.notification("You don't have the gun..?")
-                return
-            end
-        end
-
-        local murdererHRP = murderer.Character:FindFirstChild("HumanoidRootPart")
-        if not murdererHRP then
-            fu.notification("Could not find the murderer's HumanoidRootPart.")
-            return
-        end
-        
-        local predictedPosition = getPredictedPosition(murderer, shootOffset)
-        
-        -- Enhanced Prediction for Jumping Murderer
-        if murderer.Character:FindFirstChild("Humanoid").Jump then
-            -- Incorporating the provided function
-            predictedPosition = getPredictedPositionWhileJumping(murderer, shootOffset)
-        end
-
-        local args = {
-            [1] = 1,
-            [2] = predictedPosition,
-            [3] = "AH"
-        }
-        
-        local success, result = pcall(function()
-            return localplayer.Character.Gun.KnifeServer.ShootGun:InvokeServer(unpack(args))
-        end)
-        
-        if not success then
-            fu.notification("Failed to shoot: " .. tostring(result))
-        else
-            fu.notification("Shot fired successfully.")
-        end
-    end,}
-})
-
-
-	table.insert(module, {
-    Type = "Toggle",
-    Args = {"God mode (Can't be seen)", function(Self, state) -- Credits to EdgeIY, Infinite Yield
-        godModeEnabled = state
-        
-        if godModeEnabled then
-            -- Enable God Mode
-            local Cam = workspace.CurrentCamera
-            local Pos, Char = Cam.CFrame, localplayer.Character
-            local Human = Char and Char:FindFirstChildWhichIsA("Humanoid")
-            if Human then
-                local nHuman = Human:Clone()
-                nHuman.Parent = Char
-                localplayer.Character = nil
-                nHuman:SetStateEnabled(Enum.HumanoidStateType.Physics, false)
-                nHuman:SetStateEnabled(Enum.HumanoidStateType.GettingUp, false)
-                nHuman:SetStateEnabled(Enum.HumanoidStateType.Dead, false)
-                nHuman.BreakJointsOnDeath = true
-                Human:Destroy()
-                localplayer.Character = Char
-                Cam.CameraSubject = nHuman
-                Cam.CFrame = Pos
-                nHuman.DisplayDistanceType = Enum.HumanoidDisplayDistanceType.None
-
-                local Script = Char:FindFirstChild("Animate")
-                if Script then
-                    Script.Disabled = true
-                    wait()
-                    Script.Disabled = false
-                end
-
-                nHuman.Health = nHuman.MaxHealth
-            end
-        else
-            -- Disable God Mode
-            local Cam = workspace.CurrentCamera
-            local Pos, Char = Cam.CFrame, localplayer.Character
-            local Human = Char and Char:FindFirstChildWhichIsA("Humanoid")
-            if Human then
-                local nHuman = Human:Clone()
-                nHuman.Parent = Char
-                localplayer.Character = nil
-                nHuman:SetStateEnabled(Enum.HumanoidStateType.Physics, true)
-                nHuman:SetStateEnabled(Enum.HumanoidStateType.GettingUp, true)
-                nHuman:SetStateEnabled(Enum.HumanoidStateType.Dead, true)
-                nHuman.BreakJointsOnDeath = false
-                Human:Destroy()
-                localplayer.Character = Char
-                Cam.CameraSubject = nHuman
-                Cam.CFrame = Pos
-                nHuman.DisplayDistanceType = Enum.HumanoidDisplayDistanceType.Distance
-
-                local Script = Char:FindFirstChild("Animate")
-                if Script then
-                    Script.Disabled = true
-                    wait()
-                    Script.Disabled = false
-                end
-
-                nHuman.Health = nHuman.MaxHealth
-            end
-        end
-    end}
-})
-
-
-	table.insert(module, {
-	Type = "Toggle",
-	Args = {"Automatically get gun on drop", function(Self, state)
-		autoGetDroppedGun = state
-		if autoGetDroppedGun then
-			fu.notification("Automatic gun retrieval enabled.")
-			-- Start monitoring for gun drops
-			coroutine.wrap(function()
-				while autoGetDroppedGun do
-					local gunDrop = workspace:FindFirstChild("GunDrop")
-					if gunDrop then
-						local character = localplayer.Character
-						local characterPosition = character:GetPivot().Position
-						local gunDropPosition = gunDrop.Position
-						
-						local distanceToGunDrop = (characterPosition - gunDropPosition).Magnitude
-						
-						if distanceToGunDrop <= pickUpDistanceStuds then
-							local previousPosition = character:GetPivot()
-
-							-- Move to the gun drop position
-							character:MoveTo(gunDrop.Position)
-							
-							-- Wait for the gun to be picked up
-							localplayer.Backpack.ChildAdded:Wait()
-							
-							-- Return to the previous position
-							character:PivotTo(previousPosition)
-						else
-							fu.notification("Gun drop detected but too far away to auto-pickup.")
-						end
-					end
-					wait(1) -- Check every second
-				end
-			end)()
-		else
-			fu.notification("Automatic gun retrieval disabled.")
-		end
-	end}
-})
-	
-	
-	table.insert(module, {
 		Type = "Button",
-		Args = {"Throw knife to closest player", function(Self)
-			if findMurderer() ~= localplayer then 
-			    fu.notification("Follow (brx12k) on Tiktok!") -- Notification added here
-				fu.notification("You're not murderer.") 
+		Args = {"Sung Sz", function(Self)
+			if findSheriff() ~= localplayer then 
+				fu.notification("You're not sheriff/hero.") 
 				return 
 			end
 	
-			if not localplayer.Character:FindFirstChild("Knife") then
-				local hum = localplayer.Character:FindFirstChild("Humanoid")
-				if localplayer.Backpack:FindFirstChild("Knife") then
-					hum:EquipTool(localplayer.Backpack:FindFirstChild("Knife"))
-				else
-					fu.notification("You don't have the knife..?")
-					return
-				end
-			end
-			
-			local closestPlayer = findNearestPlayer()
-			if not closestPlayer then
-				fu.notification("No player found to throw at.")
-				return
-			end
-			
-	
-			local closestPlayerHRP = closestPlayer.Character:FindFirstChild("HumanoidRootPart")
-			if not closestPlayerHRP then
-				fu.notification("Could not find the closest player's HumanoidRootPart.")
-				return
-			end
-	
-			local predictedPosition = getPredictedPosition(closestPlayer, shootOffset * 2.5)
-	
-			local args = {
-				[1] = CFrame.new(localplayer.Character:FindFirstChild("HumanoidRootPart").Position), 
-				[2] = predictedPosition
-			}
-	
-			localplayer.Character.Knife.Throw:FireServer(unpack(args))
-		end,}
-})
-	
-	
-	table.insert(module, {
-    Type = "Button",
-    Args = {"Throw knife to player distance of 1-150 meters. (OP!)", function(Self)
-        if findMurderer() ~= localplayer then
-             fu.notification("Follow (brx12k) on Tiktok!") -- Notification added here
-            fu.notification("You're not the murderer.") 
-            return 
-        end
-
-        if not localplayer.Character:FindFirstChild("Knife") then
-            local hum = localplayer.Character:FindFirstChild("Humanoid")
-            if localplayer.Backpack:FindFirstChild("Knife") then
-                hum:EquipTool(localplayer.Backpack:FindFirstChild("Knife"))
-            else
-                fu.notification("You don't have the knife..?")
-                return
-            end
-        end
-        
-        local closestPlayer = findNearestPlayer()
-        if not closestPlayer then
-            fu.notification("No player found to throw at.")
-            return
-        end
-
-        local closestPlayerHRP = closestPlayer.Character:FindFirstChild("HumanoidRootPart")
-        if not closestPlayerHRP then
-            fu.notification("Could not find the closest player's HumanoidRootPart.")
-            return
-        end
-
-        local playerPosition = localplayer.Character:FindFirstChild("HumanoidRootPart").Position
-        local playerDistance = (playerPosition - closestPlayerHRP.Position).magnitude
-        local throwDistance = 150 -- Change this to the desired throw distance in meters
-
-        if playerDistance > throwDistance then
-            fu.notification("Player is too far to throw at.")
-            return
-        end
-
-        local predictedPosition = getPredictedPosition(closestPlayer, shootOffset * 2.5)
-
-        local args = {
-            [1] = CFrame.new(playerPosition), 
-            [2] = predictedPosition
-        }
-
-        localplayer.Character.Knife.Throw:FireServer(unpack(args))
-    end,}
-})
-
-		
-	table.insert(module, {
-		Type = "Input",
-		Args = {"Shoot position offset", "Set", function(Self, text)
-			if not tonumber(text) then fu.notification("Not a valid number.") return end
-	
-			if tonumber(text) > 5 then
-				fu.notification("An offset with a multiplier of 5 might not at all shoot the murderer!")
-			end
-			if tonumber(text) < 0 then
-				fu.notification("An offset with a negative multiplier will make a shot BEHIND the murderer's walk direction.")
-			end
-			shootOffset = tonumber(text)
-			fu.notification("Offset has been set.")
-		end,}
-	})
-	
-	table.insert(module, {
-		Type = "Text",
-		Args = {"Shoot offset re-aims the gun/knife shoot/throw to the character's predicted position. Recommended is 2."}
-	})
-	
-	table.insert(module, {
-	Type = "ButtonGrid",
-	Toggleable = true,
-	Args = {1, {
-		Coins_Magnet = function()
-			coinAutoCollect = not coinAutoCollect
-			if coinAutoCollect then
-				fu.notification("Coins magnet activated.")
-				task.spawn(function()
-					while coinAutoCollect do
-						local coins = {}
-						for _, coin in ipairs(workspace:GetChildren()) do
-							if coin:IsA("BasePart") and coin.Name == "Coin" then
-								table.insert(coins, coin)
-							end
-						end
-						for i = 1, math.min(2, #coins) do
-							local coin = coins[i]
-							if coin then
-								localplayer.Character:SetPrimaryPartCFrame(coin.CFrame)
-								task.wait(1)
-							end
-						end
-						task.wait(2)  -- Wait for 2 seconds before collecting next set of coins
-					end
-				end)
-			else
-				fu.notification("Coins magnet deactivated.")
-			end
-		end,
-		Auto_Shoot_murderer = function()
-			autoShooting = not autoShooting
-			if findSheriff() == localplayer and autoShooting then
-				fu.notification("Auto-shooting started.")
-				task.spawn(function()
-					while autoShooting and findSheriff() == localplayer do
-						task.wait(0.1)
-						local murderer = findMurderer()
-						if not murderer then
-							fu.notification("No murderer.")
-							continue
-						end
-						local murdererHRP = murderer.Character and murderer.Character:FindFirstChild("HumanoidRootPart")
-						if not murdererHRP then
-							fu.notification("Could not find the murderer's HumanoidRootPart.")
-							continue
-						end
-
-						local murdererPosition = murdererHRP.Position
-						local characterRootPart = localplayer.Character and localplayer.Character:FindFirstChild("HumanoidRootPart")
-						if not characterRootPart then
-							continue
-						end
-
-						local rayDirection = (murdererPosition - characterRootPart.Position).Unit * 50
-						local raycastParams = RaycastParams.new()
-						raycastParams.FilterType = Enum.RaycastFilterType.Exclude
-						raycastParams.FilterDescendantsInstances = {localplayer.Character}
-
-						local hit = workspace:Raycast(characterRootPart.Position, rayDirection, raycastParams)
-						if not hit or hit.Instance.Parent == murderer.Character then
-							if not localplayer.Character:FindFirstChild("Gun") then
-								local hum = localplayer.Character:FindFirstChild("Humanoid")
-								local gun = localplayer.Backpack:FindFirstChild("Gun")
-								if gun then
-									hum:EquipTool(gun)
-								else
-									fu.notification("You don't have the gun..?")
-									return
-								end
-							end
-
-							local murdererVelocity = murdererHRP.AssemblyLinearVelocity
-							local predictedPosition = murdererHRP.Position + (murdererVelocity * Vector3.new(1, 0.5, 1)) * (shootOffset / 15)
-
-							local args = {
-								[1] = 1,
-								[2] = predictedPosition,
-								[3] = "AH"
-							}
-
-							localplayer.Character.Gun.KnifeServer.ShootGun:InvokeServer(unpack(args))
-							fu.notification("Auto-shooting!")
-						end
-					end
-				end)
-			else
-				fu.notification("Auto-shooting deactivated.")
-			end
-		end,
-	}}
-})
-
-	
-	table.insert(module, {Type="Text", Args={""}})
-	
-	table.insert(module, {
-		Type = "Text",
-		Args = {"Newly Added <font color='#008000'>Script.</font> .", "center"}
-	})
-	
-	
-    table.insert(module, {
-	Type = "Button",
-	Args = {"Eliminate Nearby Player (DETECTABLE)", function()
-		if findMurderer() ~= localplayer then 
-			fu.notification("You're not the murderer.") 
-			return 
-		end
-	
-		if not localplayer.Character:FindFirstChild("Knife") then
-			local hum = localplayer.Character:FindFirstChild("Humanoid")
-			if localplayer.Backpack:FindFirstChild("Knife") then
-				localplayer.Character.Humanoid:EquipTool(localplayer.Backpack:FindFirstChild("Knife"))
-			else
-				fu.notification("You don't have the knife.")
-				return
-			end
-		end
-	
-		local NearestPlayer = findNearestPlayer()
-	
-		if NearestPlayer and NearestPlayer.Character then
-	
-			-- Get the HumanoidRootParts
-			local localRootPart = localplayer.Character:FindFirstChild("HumanoidRootPart")
-			local nearestRootPart = NearestPlayer.Character:FindFirstChild("HumanoidRootPart")
-	
-			if localRootPart and nearestRootPart then
-				-- Calculate the distance between the local player and the nearest player
-				local distance = (localRootPart.Position - nearestRootPart.Position).magnitude
-				
-				-- Check if the distance is within a certain range (e.g., 100 meters)
-				if distance <= 100 then
-					-- Calculate the look vector of the nearest player
-					local lookVector = nearestRootPart.CFrame.LookVector
-	
-					-- Calculate the offset position face to face with the nearest player
-					local offsetPosition = nearestRootPart.Position + (lookVector * 3) -- Adjusted for face to face position with the player
-	
-					-- Teleport the local player to the offset position
-					localRootPart.CFrame = CFrame.new(offsetPosition)
-					
-					-- Equip the knife if it's not already equipped
-					local knife = localplayer.Character:FindFirstChild("Knife")
-					if knife then
-						localplayer.Character.Humanoid:EquipTool(knife)
-					end
-					
-					-- Fire the server event to stab the nearest player
-					local args = {
-						[1] = "Slash"
-					}
-	
-					localplayer.Character.Knife.Stab:FireServer(unpack(args))
-				else
-					fu.notification("The nearest player is too far away!")
-				end
-			end
-		else
-			fu.notification("Can't find a player nearby.")
-		end
-	
-	end,}
-})
-
-	
-	table.insert(module, {
-	Type = "Button",
-	Args = {"Replace Nearby Player (DETECTABLE)", function()
-		if findMurderer() ~= localplayer then 
-			fu.notification("You're not the murderer.") 
-			return 
-		end
-	
-		if not localplayer.Character:FindFirstChild("Knife") then
-			local hum = localplayer.Character:FindFirstChild("Humanoid")
-			if localplayer.Backpack:FindFirstChild("Knife") then
-				localplayer.Character.Humanoid:EquipTool(localplayer.Backpack:FindFirstChild("Knife"))
-			else
-				fu.notification("You don't have the knife.")
-				return
-			end
-		end
-	
-		local NearestPlayer = findNearestPlayer()
-	
-		if NearestPlayer and NearestPlayer.Character then
-	
-			-- Get the HumanoidRootParts
-			local localRootPart = localplayer.Character:FindFirstChild("HumanoidRootPart")
-			local nearestRootPart = NearestPlayer.Character:FindFirstChild("HumanoidRootPart")
-	
-			if localRootPart and nearestRootPart then
-				-- Calculate the distance between the local player and the nearest player
-				local distance = (localRootPart.Position - nearestRootPart.Position).magnitude
-				
-				-- Check if the distance is within a certain range (e.g., 100 meters)
-				if distance <= 100 then
-					-- Calculate the offset position to teleport the nearest player face-to-face with you
-					local lookVector = localRootPart.CFrame.LookVector
-					local offsetPosition = localRootPart.Position + (lookVector * 3) -- Adjusted for face-to-face position with the player
-	
-					-- Check if the offset position is valid (not in the void)
-					if offsetPosition.Y > 0 then
-						-- Teleport the nearest player to the offset position
-						nearestRootPart.CFrame = CFrame.new(offsetPosition)
-						
-						-- Equip the knife if it's not already equipped
-						local knife = localplayer.Character:FindFirstChild("Knife")
-						if knife then
-							localplayer.Character.Humanoid:EquipTool(knife)
-						end
-						
-						-- Fire the server event to stab the nearest player
-						local args = {
-							[1] = "Slash"
-						}
-		
-						localplayer.Character.Knife.Stab:FireServer(unpack(args))
-					else
-						fu.notification("Invalid position to teleport the player.")
-					end
-				else
-					fu.notification("The nearest player is too far away!")
-				end
-			end
-		else
-			fu.notification("Can't find a player nearby.")
-		end
-	
-	end,}
-})
-
-
-	table.insert(module, {Type="Text", Args={""}})
-	
-	table.insert(module, {
-		Type = "Text",
-		Args = {"The tools below can be <font color='#FF0000'>detected,</font> both game-wise and player-wise. Use at your own risk.", "center"}
-	})
-
-	
-	table.insert(module, {
-		Type = "Button",
-		Args = {"Teleport to dropped gun", function(Self)
-		fu.notification("Follow (brx12k) on Tiktok!") -- Notification added here
-		
-			if not workspace:FindFirstChild("GunDrop") then fu.notification("No dropped gun to be teleported to.") return end
-			local previousPosition = localplayer.Character:GetPivot().Position
-			localplayer.Character:MoveTo(workspace:FindFirstChild("GunDrop").Position)
-			task.wait(.1)
-			localplayer.Character:MoveTo(previousPosition)
-			--fu.notification("Attempting a pathfind to gun..")
-	
-			--local pathToGun = phs:CreatePath({
-			--	AgentRadius = 5,
-			--	AgentHeight = localplayer.Character:GetExtentsSize().Y,
-			--	AgentCanJump = true
-			--})
-			--local completed, err = pcall(function()
-			--	pathToGun:ComputeAsync(localplayer.Character.PrimaryPart.Position, Vector3.new(workspace:FindFirstChild("GunDrop"):GetPivot().X, workspace:FindFirstChild("GunDrop"):GetPivot().Y, workspace:FindFirstChild("GunDrop"):GetPivot().Z))
-			--end)
-	
-			--if completed and pathToGun.Status == Enum.PathStatus.Success then
-			--	fu.notification("Found a path. Moving.")
-			--	for _, waypoint in pathToGun:GetWaypoints() do
-			--		task.wait(0.05)
-			--		game:GetService("TweenService"):Create(localplayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(0.05, Enum.EasingStyle.Linear), {
-			--			CFrame = CFrame.new(waypoint.Position + Vector3.new(0, 3, 0))	
-			--		}):Play()
-			--	end
-			--else
-			--	fu.notification("Couldn't find a proper path to gun. Try moving a little closer to the gun.")
-			--end
-		end,}
-})	
-		
-		
-	table.insert(module, {
-		Type = "Button",
-		Args = {"God mode (Very, VERY UNSTABLE)", function(Self) -- Credits to EdgeIY, Infinite Yield
-		fu.notification("Follow (brx12k) on Tiktok!") -- Notification added here
-		
-			local Cam = workspace.CurrentCamera
-			local Pos, Char = Cam.CFrame, localplayer.Character
-			local Human = Char and Char.FindFirstChildWhichIsA(Char, "Humanoid")
-			local nHuman = Human.Clone(Human)
-			nHuman.Parent, localplayer.Character = Char, nil
-			nHuman.SetStateEnabled(nHuman, 15, false)
-			nHuman.SetStateEnabled(nHuman, 1, false)
-			nHuman.SetStateEnabled(nHuman, 0, false)
-			nHuman.BreakJointsOnDeath, Human = true, Human.Destroy(Human)
-			localplayer.Character, Cam.CameraSubject, Cam.CFrame = Char, nHuman, wait() and Pos
-			nHuman.DisplayDistanceType = Enum.HumanoidDisplayDistanceType.None
-			local Script = Char.FindFirstChild(Char, "Animate")
-			if Script then
-				Script.Disabled = true
-				wait()
-				Script.Disabled = false
-			end
-			nHuman.Health = nHuman.MaxHealth
-		end,}
-	})
-	
-	
-	table.insert(module, {
-		Type = "Button",
-		Args = {"Kill murderer immediately (DETECTABLE)", function()
-		fu.notification("Follow (brx12k) on Tiktok!") -- Notification added here
-		
-			if findSheriff() ~= localplayer then fu.notification("You're not sheriff/hero.") return end
-			if not findMurderer() then
+			local murderer = findMurderer()
+			if not murderer then
 				fu.notification("No murderer to shoot.")
 				return
 			end
@@ -3923,342 +3588,662 @@ end,
 			if not localplayer.Character:FindFirstChild("Gun") then
 				local hum = localplayer.Character:FindFirstChild("Humanoid")
 				if localplayer.Backpack:FindFirstChild("Gun") then
-					localplayer.Character:FindFirstChild("Humanoid"):EquipTool(localplayer.Backpack:FindFirstChild("Gun"))
+					hum:EquipTool(localplayer.Backpack:FindFirstChild("Gun"))
 				else
 					fu.notification("You don't have the gun..?")
 					return
 				end
 			end
 	
-			local Murderer = findMurderer()
-	
-			if Murderer and Murderer.Character then
-	
-				-- Get the HumanoidRootParts
-				local localRootPart = localplayer.Character:FindFirstChild("HumanoidRootPart")
-				local nearestRootPart = Murderer.Character:FindFirstChild("HumanoidRootPart")
-	
-				if localRootPart and nearestRootPart then
-					-- Calculate the look vector of the nearest player
-					local lookVector = nearestRootPart.CFrame.LookVector
-	
-					-- Calculate the offset position behind the nearest player
-					local offsetPosition = nearestRootPart.Position - (lookVector * 5) -- 7 studs behind
-	
-					-- Teleport the local player to the offset position
-					localRootPart.CFrame = CFrame.new(offsetPosition) * CFrame.Angles(0, nearestRootPart.CFrame.Y, 0)
-				end
-			else
-				fu.notification("Can't find a murderer!?")
-			end
-			task.wait(0.1)
-			local murdererHRP = Murderer.Character:FindFirstChild("HumanoidRootPart")
+			local murdererHRP = murderer.Character:FindFirstChild("HumanoidRootPart")
 			if not murdererHRP then
 				fu.notification("Could not find the murderer's HumanoidRootPart.")
 				return
 			end
-	
-			local predictedPosition = getPredictedPosition(Murderer, shootOffset)
+			
+			local predictedPosition = getPredictedPosition(murderer, shootOffset)
 	
 			local args = {
 				[1] = 1,
 				[2] = predictedPosition,
 				[3] = "AH"
 			}
-	
 			localplayer.Character.Gun.KnifeServer.ShootGun:InvokeServer(unpack(args))
+		end,}
+	})
+	
+	
+	
+	
+	--table.insert(module, {
+	--	Type = "Button",
+	--	Args = {"Throw knife to closest player", function(Self)
+	--		if findMurderer() ~= localplayer then 
+	--			fu.notification("You're not murderer.") 
+	--			return 
+	--		end
+	
+	--		if not localplayer.Character:FindFirstChild("Knife") then
+	--			local hum = localplayer.Character:FindFirstChild("Humanoid")
+	--			if localplayer.Backpack:FindFirstChild("Knife") then
+	--				hum:EquipTool(localplayer.Backpack:FindFirstChild("Knife"))
+	--			else
+	--				fu.notification("You don't have the knife.")
+	--				return
+	--			end
+	--		end
+			
+	--		local closestPlayer = findNearestPlayer()
+	--		if not closestPlayer then
+	--			fu.notification("No player found to throw at.")
+	--			return
+	--		end
+			
+	
+	--		local closestPlayerHRP = closestPlayer.Character:FindFirstChild("HumanoidRootPart")
+	--		if not closestPlayerHRP then
+	--			fu.notification("Could not find the closest player's HumanoidRootPart.")
+	--			return
+	--		end
+			
+	--		local lpknife = localplayer.Backpack:FindFirstChild("Knife")
+	--		if not lpknife then
+	--			fu.notification("You don't have the knife.")
+	--		end
+	
+	--		--local predictedPosition = getPredictedPosition(closestPlayer, shootOffset * 2.5)
+	
+	--		local args = {
+	--			[1] = lpknife:GetPivot(), 
+	--			[2] = closestPlayerHRP.Position
+	--		}
+	
+	--		localplayer.Character.Knife.Throw:FireServer(unpack(args))
+	--	end,}
+	--})
+	
+	
+  --	table.insert(module, {
+  --		Type = "Input",
+  --		Args = {"Shoot position offset", "Set", function(Self, text)
+  --			if not tonumber(text) then fu.notification("Not a valid number.") return end
+	
+  --			if tonumber(text) > 5 then
+				fu.notification("An offset with a multiplier of 5 might not at all shoot the murderer!")
+  --			end
+  --			if tonumber(text) < 0 then
+  --			fu.notification("An offset with a negative multiplier will make a shot BEHIND the murderer's walk direction.")
+  --			end
+  --			shootOffset = tonumber(text)
+  --			fu.notification("Offset has been set.")
+  --		end,}
+  --	})
+	
+	table.insert(module, {
+		Type = "Text",
+		Args = {"Sung Sz Youtube Channel."}
+	})
+	
+	table.insert(module, {
+		Type = "ButtonGrid",
+		Toggleable = true,
+		Args = {1, {
+			Coins_Magnet = function()
+				coinAutoCollect = not coinAutoCollect
+				if coinAutoCollect then
+					fu.notification("Coins magnet is currently buggy right now. Use at your own risk.")
+				end
+			end,
+			Auto_Shoot_murderer = function()
+				autoShooting = not autoShooting
+				if findSheriff() == localplayer and autoShooting then
+					fu.notification("Auto-shooting started.")
+					repeat
+						task.wait(0.1)
+						local murderer = findMurderer()
+						if not murderer then warn("[SUNGSZ] > MM2 Autoshoot - No murderer.") continue end
+						local murdererPosition = murderer.Character.HumanoidRootPart.Position
+						local characterRootPart = localplayer.Character.HumanoidRootPart
+						local rayDirection = (murdererPosition - characterRootPart.Position).Unit * 50
+	
+						local raycastParams = RaycastParams.new()
+						raycastParams.FilterType = Enum.RaycastFilterType.Exclude
+						raycastParams.FilterDescendantsInstances = {localplayer.Character}
+	
+						local hit = workspace:Raycast(characterRootPart.Position, rayDirection, raycastParams)
+						if not hit or hit.Instance.Parent == murderer.Character then -- Check if nothing collides or if it collides with the murderer
+							fu.notification("Auto-shooting!")
+							if not localplayer.Character:FindFirstChild("Gun") then
+								local hum = localplayer.Character:FindFirstChild("Humanoid")
+								if localplayer.Backpack:FindFirstChild("Gun") then
+									localplayer.Character:FindFirstChild("Humanoid"):EquipTool(localplayer.Backpack:FindFirstChild("Gun"))
+								else
+									fu.notification("You don't have the gun..?")
+									return
+								end
+							end
+							local murdererHRP = murderer.Character:FindFirstChild("HumanoidRootPart")
+							if not murdererHRP then
+								fu.notification("Could not find the murderer's HumanoidRootPart.")
+								return
+							end
+							local murdererVelocity = murdererHRP.AssemblyLinearVelocity
+							local predictedPosition = murdererHRP.Position + (murdererVelocity * Vector3.new(1, 0.5, 1)) * (shootOffset / 15)
+	
+							local args = {
+								[1] = 1,
+								[2] = predictedPosition,
+								[3] = "AH"
+							}
+	
+							localplayer.Character.Gun.KnifeServer.ShootGun:InvokeServer(unpack(args))
+						end
+					until not autoShooting
+				end
+			end,
+		}}
+	})
+	
+	
+	
+	table.insert(module, {Type="Text", Args={""}})
+	
+	table.insert(module, {
+		Type = "Text",
+		Args = {"<font color='#FF0000'>Sung Sz Youtube Channel</font>"}
+	})	
+	
+	_G.Modules[3] = module
+	
+end
+local function WRIHDU_fake_script() -- Fake Script: StarterGui.SUNGSZ.Universal
+    local script = Instance.new("LocalScript")
+    script.Name = "Universal"
+    script.Parent = Converted["_SUNGSZ"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local module = {}
+	module["gameId"] = 0 -- Restrict module to a certain game ID only. 0 allows all games.
+	if (module["gameId"] ~= game.GameId) and module["gameId"] ~= 0 then
+		script.Enabled = true
+	end
+	
+	local ts = game:GetService("TweenService")
+	local uis = game:GetService("UserInputService")
+	local rs = game:GetService("RunService")
+	local fu = require(script.Parent.FUNCTIONS)
+	
+	local loopfovandws = false
+	local ctrlclicktp = false
+	local ws = 16
+	local fov = 70
+	
+	local hidden = false
+	
+	task.spawn(function()
+		rs.RenderStepped:Connect(function()
+			if loopfovandws then
+				workspace.CurrentCamera.FieldOfView = fov
+				if game.Players.LocalPlayer.Character then
+					if game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
+						game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = ws
+					end
+				end
+			end
+		end)
+	end)
+	
+	uis.InputBegan:Connect(function(inp, proc)
+		if proc then return end
+		
+		if uis:IsKeyDown(Enum.KeyCode.LeftControl) and inp.KeyCode == Enum.KeyCode.Y and hidden then
+			hidden = false
+			ts:Create(script.Parent.Menu.UIScale, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {
+				Scale = 1
+			}):Play()
+		end
+	end)
+	
+	local function getPlayerMouse()
+		local player = game:GetService("Players").LocalPlayer
+		if player then
+			return player:GetMouse()
+		end
+		return nil
+	end
+	
+	-- Function to cast a ray from the cursor to the furthest object
+	local function getRayHitPosition()
+		local mouse = getPlayerMouse()
+		if not mouse then
+			return nil
+		end
+	
+		local camera = workspace.CurrentCamera
+		local unitRay = camera:ScreenPointToRay(mouse.X, mouse.Y)
+		local ray = Ray.new(unitRay.Origin, unitRay.Direction * 1000) -- Adjust the range as needed
+	
+		local part, position = workspace:FindPartOnRay(ray, game:GetService("Players").LocalPlayer.Character)
+	
+		if part then
+			return position
+		else
+			return nil
+		end
+	end
+	
+	uis.InputBegan:Connect(function(inp, proc)
+		if proc then return end
+	
+		if uis:IsKeyDown(Enum.KeyCode.LeftControl) and inp.UserInputType == Enum.UserInputType.MouseButton1 and ctrlclicktp then
+			local ray = getRayHitPosition()
+			if not ray then fu.notification("Couldn't find a place to teleport to.") return end
+			game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(ray)
+		end
+	end)
+	
+	if uis.AccelerometerEnabled then
+		uis.DeviceAccelerationChanged:Connect(function(acc)
+			if hidden and acc.Position.Magnitude > 50 then
+				hidden = false
+				ts:Create(script.Parent.Menu.UIScale, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {
+					Scale = 1
+				}):Play()
+			end 
+		end)
+	end
+	
+	module["Name"] = "Universal"
+	
+	local ts = game:GetService("TweenService")
+	
+	table.insert(module, {
+		Type = "Text",
+		Args = {"Welcome to SUNGSZ! The open, free script hub."}
+	})
+	table.insert(module, {
+		Type = "Button",
+		Args = {"Youtube Channel's Name", function(Self)
+			if setclipboard then setclipboard("Sung Sz") end
+			fu.notification('Channel Name has been copied to clipboard!')
+		end,}
+	})
+	table.insert(module, {
+		Type = "Text",
+		Args = {"---"}
+	})
+	
+	table.insert(module, {
+		Type = "Input",
+		Args = {"Hitbox expander", "Expand everyone's hitbox", function(Self, ToExpand)
+			local players = game:GetService("Players"):GetPlayers()
+			for i,v in ipairs(players) do
+				if v ~= game.Players.LocalPlayer and v.Character:FindFirstChild('HumanoidRootPart') then
+					local sizeArg = tonumber(ToExpand)
+					local Size = Vector3.new(sizeArg,sizeArg,sizeArg)
+					local Root = v.Character:FindFirstChild('HumanoidRootPart')
+					if Root:IsA("BasePart") then
+						if not ToExpand or sizeArg == 1 then
+							Root.Size = Vector3.new(2,1,1)
+							Root.Transparency = 0.2
+						else
+							Root.Size = Size
+							Root.Transparency = 0.2
+						end
+						Root.CanCollide = false
+					end
+				end
+			end
+			fu.notification("Hitboxes expanded.")
+		end,}
+	})
+	
+	table.insert(module, {
+		Type = "Input",
+		Args = {"Walkspeed", "Set speed", function(Self, speed)
+			local lp = game:GetService("Players").LocalPlayer
+			local char = lp.Character
+			if not char then fu.notification("No character!") return end
+			local hu = char:FindFirstChildOfClass("Humanoid")
+			if not hu then fu.notification("No humanoid on your character..?") return end
+			hu.WalkSpeed = tonumber(speed) or 16
+			fu.notification("Walkspeed set.")
+			ws = tonumber(speed) or 16
+		end,}
+	})
+	
+	
+	local walkspeedInDeCrement = 3
+	table.insert(module, {
+		Type = "Button",
+		Args = {"Increase walkspeed", function(Self)
+			local lp = game:GetService("Players").LocalPlayer
+			local char = lp.Character
+			if not char then fu.notification("No character!") return end
+			local hu = char:FindFirstChildOfClass("Humanoid")
+			if not hu then fu.notification("No humanoid on your character..?") return end
+			ws = ws + walkspeedInDeCrement
+			hu.WalkSpeed = hu.WalkSpeed + walkspeedInDeCrement
+			fu.notification("Walkspeed is now ".. hu.WalkSpeed)
 		end,}
 	})
 	
 	table.insert(module, {
 		Type = "Button",
-		Args = {"Kill closest player as murderer (DETECTABLE)", function()
-		fu.notification("Follow (brx12k) on Tiktok!") -- Notification added here
-		
-			if findMurderer() ~= localplayer then fu.notification("You're not murderer.") return end
+		Args = {"Decrease walkspeed", function(Self)
+			local lp = game:GetService("Players").LocalPlayer
+			local char = lp.Character
+			if not char then fu.notification("No character!") return end
+			local hu = char:FindFirstChildOfClass("Humanoid")
+			if not hu then fu.notification("No humanoid on your character..?") return end
+			ws = ws - walkspeedInDeCrement
+			hu.WalkSpeed = hu.WalkSpeed - walkspeedInDeCrement
+			fu.notification("Walkspeed is now ".. hu.WalkSpeed)
+		end,}
+	})
 	
-			if not localplayer.Character:FindFirstChild("Knife") then
-				local hum = localplayer.Character:FindFirstChild("Humanoid")
-				if localplayer.Backpack:FindFirstChild("Knife") then
-					localplayer.Character:FindFirstChild("Humanoid"):EquipTool(localplayer.Backpack:FindFirstChild("Knife"))
-				else
-					fu.notification("You don't have the knife..?")
-					return
-				end
-			end
+	table.insert(module, {
+		Type = "Input",
+		Args = {"Walkspeed increment (How big each increase/decrease is)", "Set", function(Self, input)
+			walkspeedInDeCrement = tonumber(input) or 3
+			if not tonumber(input) then fu.notification("Not a number. Setting to default.") end
+			fu.notification("Set walkspeed increment to ".. walkspeedInDeCrement)
+		end,}
+	})
 	
-			local NearestPlayer = findNearestPlayer()
+	table.insert(module, {
+		Type = "Input",
+		Args = {"FOV change", "Set FOV", function(Self, tofov)
+			if not tonumber(tofov) then fu.notification("Not a number. Setting to default.") end
+			ts:Create(workspace.CurrentCamera, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {
+				FieldOfView = tonumber(tofov) or 70
+			}):Play()
+			fov = tonumber(tofov) or 70
+		end,}
+	})
 	
-			if NearestPlayer and NearestPlayer.Character then
-	
-				-- Get the HumanoidRootParts
-				local localRootPart = localplayer.Character:FindFirstChild("HumanoidRootPart")
-				local nearestRootPart = NearestPlayer.Character:FindFirstChild("HumanoidRootPart")
-	
-				if localRootPart and nearestRootPart then
-					-- Calculate the look vector of the nearest player
-					local lookVector = nearestRootPart.CFrame.LookVector
-	
-					-- Calculate the offset position behind the nearest player
-					local offsetPosition = nearestRootPart.Position - (lookVector) 
-	
-					-- Teleport the local player to the offset position
-			localRootPart.CFrame = CFrame.lookAt(localRootPart.CFrame.Position, nearestRootPart.CFrame.Position) * CFrame.new(offsetPosition)
-				end
-			else
-				fu.notification("Can't find a player!?")
-			end
-			local args = {
-				[1] = "Slash"
-			}
-	
-			localplayer.Character.Knife.Stab:FireServer(unpack(args))
-	
+	table.insert(module, {
+		Type = "Toggle",
+		Args = {"Loop walkspeed and FOV", function(Self, state)
+			loopfovandws = state
 		end,}
 	})
 	
 	
-	_G.Modules[#_G.Modules + 1] = module
-	
-end
-local function SNFDSE_fake_script() -- Fake Script: StarterGui.BRX.AddCustomModule.Add.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Add"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local ts = game:GetService("TweenService")
-	
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		if script.Parent.Parent.TextBox.Text == "" then return end
-		ts:Create(script.Parent.Parent.Parent.Menu.UIScale, TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
-			Scale = 1
-		}):Play()
-		ts:Create(script.Parent.Parent, TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
-			Position = UDim2.fromScale(0.5, -0.5)
-		}):Play()
-		
-		
-		local lastmodule = _G.Modules[#_G.Modules]
-		require(script.Parent.Parent.Parent.FUNCTIONS).notification("Module is loading...")
-		local newmodule = loadstring(game:HttpGet(script.Parent.Parent.TextBox.Text))()
-		if newmodule["BG_TASK"] then
-			coroutine.wrap(newmodule["BG_TASK"])()
-		end
-		if _G.Modules[#_G.Modules] ~= lastmodule then
-			local newmodule = _G.Modules[#_G.Modules]
-			require(script.Parent.Parent.Parent.FUNCTIONS).notification("New module added: " .. newmodule["Name"])
-			require(script.Parent.Parent.Parent.FUNCTIONS).refreshlist()
-		else
-			require(script.Parent.Parent.Parent.FUNCTIONS).notification("Module failed to load after 5 seconds.")
-		end
-	end)
-end
-local function CTLYMYG_fake_script() -- Fake Script: StarterGui.BRX.AddCustomModule.Cancel.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Cancel"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local ts = game:GetService("TweenService")
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		ts:Create(script.Parent.Parent.Parent.Menu.UIScale, TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
-			Scale = 1
-		}):Play()
-		ts:Create(script.Parent.Parent, TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
-			Position = UDim2.fromScale(0.5, -0.5)
-		}):Play()
-	end)
-end
-local function NNIQC_fake_script() -- Fake Script: StarterGui.BRX.Menu.UIStroke.UIGradient.Animator
-    local script = Instance.new("LocalScript")
-    script.Name = "Animator"
-    script.Parent = Converted["_UIGradient3"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local ts = game:GetService("TweenService")
-	
-	ts:Create(script.Parent, TweenInfo.new(
-		10, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut,
-		math.huge, false), {
-			Rotation = -180
-		}):Play()
-end
-local function DHXVQ_fake_script() -- Fake Script: StarterGui.BRX.Menu.List.AutoSetup
-    local script = Instance.new("LocalScript")
-    script.Name = "AutoSetup"
-    script.Parent = Converted["_List"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local ts = game:GetService("TweenService")
-	
-	
-	local States = {}
-	
-	local FloatingButtonConnectionsMouse = {}
-	local FloatingButtonConnectionsTouch = {}
-	
-	task.wait(0.1)
-	
-	AREA = script.Parent.Parent.Area
-	
-	local function calculateWidth(n)
-		if n <= 3 then
-			return 30
-		else
-			local base = 30
-			local additional = math.floor((n - 3) / 3) * 30
-			return base + additional
-		end
+	if uis.KeyboardEnabled and uis.MouseEnabled then
+		table.insert(module, {
+			Type = "Toggle",
+			Args = {"CTRL+Click Teleport", function(Self, state)
+				ctrlclicktp = state
+			end,}
+		})
 	end
 	
-	local listlayout = Instance.new("UIListLayout")
-	listlayout.Parent = AREA
-	listlayout.Padding = UDim.new(0, 10)
-	listlayout.FillDirection = Enum.FillDirection.Vertical
-	listlayout.SortOrder = Enum.SortOrder.LayoutOrder
-	listlayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+	local spectateLoop = nil
+	table.insert(module, {
+		Type = "Button",
+		Args = {"Spectate players", function(Self)
+			local listofplayers = game.Players:GetPlayers()
+			local currentlyViewing = 1
+			local currentPlayer = listofplayers[currentlyViewing]
+			if not currentPlayer then return end
+			workspace.CurrentCamera.CameraSubject = currentPlayer.Character.Humanoid
+			spectateLoop = task.spawn(function()
+				while true do
+					fu.dialog("Spectating...", "Now spectating: " .. workspace.CurrentCamera.CameraSubject.Parent.Name, {"Previous", "Stop", "Next"})
+					local action = fu.waitfordialog()
+					if action == "Stop" then
+						fu.closedialog()
+						workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+						task.cancel(spectateLoop)
+						break
+					elseif action == "Next" then
+						currentlyViewing = currentlyViewing + 1
+						if currentlyViewing > #listofplayers then
+							currentlyViewing = 1
+						end
+						currentPlayer = listofplayers[currentlyViewing]
+						if not currentPlayer then return end
+						workspace.CurrentCamera.CameraSubject = currentPlayer.Character.Humanoid
+					elseif action == "Previous" then
+						currentlyViewing = currentlyViewing - 1
+						if currentlyViewing < 1 then
+							currentlyViewing = #listofplayers
+						end
+						currentPlayer = listofplayers[currentlyViewing]
+						if not currentPlayer then return end
+						workspace.CurrentCamera.CameraSubject = currentPlayer.Character.Humanoid
+					end
+				end
+				
+			end)
+		end,}
+	})
+	
+	table.insert(module, {
+		Type = "Text",
+		Args = {"Miscellaneous"}
+	})
 	
 	
-	
-	
-	task.wait(.5) -- magic number to wait modules to load lmao
-	task.spawn(function()
-		require(script.Parent.Parent.Parent.FUNCTIONS).refreshlist()
-		for i = 1, 10 do
-			task.wait(.1)
-			require(script.Parent.Parent.Parent.FUNCTIONS).refreshlist()
-		end
-	end)
-end
-local function BIISYS_fake_script() -- Fake Script: StarterGui.BRX.Menu.AddCustomModule.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_AddCustomModule1"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local ts = game:GetService("TweenService")
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		ts:Create(script.Parent.Parent.UIScale, TweenInfo.new(0.6, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
-			Scale = 0.9
-		}):Play()
-		ts:Create(script.Parent.Parent.Parent.AddCustomModule, TweenInfo.new(0.6, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
-			Position = UDim2.fromScale(0.5, 0.5)
-		}):Play()
-	end)
-end
-local function WVQS_fake_script() -- Fake Script: StarterGui.BRX.Menu.Close.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Close"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local ts = game:GetService("TweenService")
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		print("-")
-		ts:Create(_G.BRX.Menu, TweenInfo.new(0.4, Enum.EasingStyle.Circular, Enum.EasingDirection.Out), 
-			{Size = UDim2.fromOffset(55, 55)}
-		):Play()
+	local playerToFling = "None"
+	--table.insert(module, {
+	--	Type = "Dropdown",
+	--	Args = {"Player to fling", function()
+	--		local playersAsStrings = {"None"}
+	--		for _, p in ipairs(game.Players:GetPlayers()) do
+	--			table.insert(playersAsStrings, p.Name)
+	--		end
+	--		return playersAsStrings
+	--	end,
 		
-		script.Parent.Parent.CanvasGroup.Visible = true
-		ts:Create(script.Parent.Parent.CanvasGroup, TweenInfo.new(0.6, Enum.EasingStyle.Circular, Enum.EasingDirection.Out), {
-			GroupTransparency = 0
-		}):Play()
-	end)
+	--	function(Self, selected)
+	--		print(selected)
+	--	end,}
+	--})
+	
+	table.insert(module, {
+		Type = "Button",
+		Args = {"Hide SUNGSZ", function(Self)
+			if uis.KeyboardEnabled then
+				ts:Create(script.Parent.Menu.UIScale, TweenInfo.new(0.6, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {
+					Scale = 0
+				}):Play()
+				hidden=true
+				fu.notification("Press CTRL+Y to bring back the menu.")
+			elseif uis.AccelerometerEnabled then
+				ts:Create(script.Parent.Menu.UIScale, TweenInfo.new(0.6, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {
+					Scale = 0
+				}):Play()
+				hidden=true
+				fu.notification("Shake your device to bring back the menu.")
+			else
+				fu.notification("Can't hide SUNGSZ!") -- how else are you gonna open???
+			end
+		end,}
+	}
+	)
+	
+	table.insert(module, {
+		Type = "Button",
+		Args = {"FPS Boost", function(Self)
+			fu.dialog("FPS boosting", "FPS boosting can have unpredictable effects. You may instead lag more using this!", {"FPS boost anyway", "Nevermind"})
+			local result = fu.waitfordialog()
+			fu.closedialog()
+			if result == "FPS boost anyway" then
+				local Terrain = workspace:FindFirstChildOfClass('Terrain')
+				Terrain.WaterWaveSize = 0
+				Terrain.WaterWaveSpeed = 0
+				Terrain.WaterReflectance = 0
+				Terrain.WaterTransparency = 0
+				game.Lighting.GlobalShadows = false
+				game.Lighting.FogEnd = 9e9
+				pcall(function()
+					settings().Rendering.QualityLevel = 1
+				end)
+				for i,v in pairs(game:GetDescendants()) do
+					if v:IsA("Part") or v:IsA("UnionOperation") or v:IsA("MeshPart") or v:IsA("CornerWedgePart") or v:IsA("TrussPart") then
+						v.Material = "Plastic"
+						v.Reflectance = 0
+					elseif v:IsA("Decal") then
+						v.Transparency = 1
+					elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+						v.Lifetime = NumberRange.new(0)
+					elseif v:IsA("Explosion") then
+						v.BlastPressure = 1
+						v.BlastRadius = 1
+					end
+				end
+				for i,v in pairs(game.Lighting:GetDescendants()) do
+					if v:IsA("BlurEffect") or v:IsA("SunRaysEffect") or v:IsA("ColorCorrectionEffect") or v:IsA("BloomEffect") or v:IsA("DepthOfFieldEffect") then
+						v.Enabled = false
+					end
+				end
+				workspace.DescendantAdded:Connect(function(child)
+					task.spawn(function()
+						if child:IsA('ForceField') then
+							rs.Heartbeat:Wait()
+							child:Destroy()
+						elseif child:IsA('Sparkles') then
+							rs.Heartbeat:Wait()
+							child:Destroy()
+						elseif child:IsA('Smoke') or child:IsA('Fire') then
+							rs.Heartbeat:Wait()
+							child:Destroy()
+						end
+					end)
+				end)
+			end
+		end,}
+	})
+	
+	local rsloopconnectionfling
+	local clip = true
+	local nocliploop
+	
+	
+	table.insert(module, {
+		Type = "ButtonGrid",
+		Args = {2, {
+			Noclip = function()
+				clip = false
+				nocliploop = rs.Stepped:Connect(function()
+					if clip == false and game.Players.LocalPlayer.Character ~= nil then
+						for _, child in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+							if child:IsA("BasePart") and child.CanCollide == true then
+								child.CanCollide = false
+							end
+						end
+					end
+				end)
+			end,
+			
+			Reclip = function()
+				if clip then return end
+				clip = true
+				nocliploop:Disconnect()
+				fu.notification("Reclipping may need you to reset your character.")
+			end,
+		}}})
+	
+	table.insert(module, {
+		Type = "ButtonGrid",
+		Args = {2, {
+			
+			Fling = function(Self)
+				local bav = Instance.new("BodyAngularVelocity")
+				bav.AngularVelocity = Vector3.new(0,99999,0)
+				bav.MaxTorque = Vector3.new(0,math.huge,0)
+				bav.P = math.huge
+				bav.Parent = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+				if game.Players:FindFirstChild(playerToFling) then
+					rs.PreSimulation:Connect(function()
+						-- Repeatedly place localplayer character to the player to fling
+						game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(game.Players:FindFirstChild(playerToFling).Character.PrimaryPart.CFrame)
+					end)
+				end
+			end,
+			
+			Stop_Fling = function(Self)
+				if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart"):FindFirstChild("BodyAngularVelocity") then
+					game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart"):FindFirstChild("BodyAngularVelocity"):Destroy()
+				end
+			end,
+			}
+		}
+	})
+	
+	
+	
+	table.insert(module, {
+		Type = "Button",
+		Args = {"Open developer console (debugging)", function(Self)
+			game.StarterGui:SetCore("DevConsoleVisible", true)
+			--_G.SUNGSZ.Open.UIStroke.Transparency = 0
+			--_G.SUNGSZ.Open.TextTransparency = 0
+			--ts:Create(_G.SUNGSZ.Open, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {
+			--	Position = UDim2.fromScale(0.5, 0.903)
+			--}):Play()
+	
+			--ts:Create(_G.SUNGSZ.Open.UIStroke, TweenInfo.new(1), {
+			--	Transparency = 1
+			--}):Play()
+			--ts:Create(_G.SUNGSZ.Open, TweenInfo.new(1), {
+			--	TextTransparency = 1
+			--}):Play()
+		end}
+	}
+	)
+	
+	--table.insert(module, {
+	--	Type = "Button",
+	--	Args = {"SELF-DESTRUCT", function(Self)
+	--		fu.notification("See you later!")
+	--		task.wait(1.5)
+	--		script.Parent:Destroy() -- Scary!
+	--	end}
+	--}
+	--)
+	--	Type = "Button",
+	--	Args = {"Move SUNGSZ trigger to the top", function(Self)
+	--		_G.SUNGSZ.Open.UIStroke.Transparency = 0
+	--		_G.SUNGSZ.Open.TextTransparency = 0
+	--		ts:Create(_G.SUNGSZ.Open, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {
+	--			Position = UDim2.fromScale(0.5, 0.063)
+	--		}):Play()
+	
+	--		ts:Create(_G.SUNGSZ.Open.UIStroke, TweenInfo.new(1), {
+	--			Transparency = 1
+	--		}):Play()
+	--		ts:Create(_G.SUNGSZ.Open, TweenInfo.new(1), {
+	--			TextTransparency = 1
+	--		}):Play()
+	--	end}
+	--}
+	
+	_G.Modules[1] = module
 end
-local function QILIXAR_fake_script() -- Fake Script: StarterGui.BRX.Menu.CanvasGroup.Opener.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Opener"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
 
-	local ts = game:GetService("TweenService")
-	local ready = true
-	
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		if not ready then return end
-		ready = false
-		ts:Create(_G.BRX.Menu, TweenInfo.new(0.4, Enum.EasingStyle.Circular, Enum.EasingDirection.Out), 
-			{Size = UDim2.fromOffset(441, 268)}
-		):Play()
-	
-		
-		ts:Create(script.Parent.Parent, TweenInfo.new(0.6, Enum.EasingStyle.Circular, Enum.EasingDirection.Out), {
-			GroupTransparency = 1
-		}):Play()
-		task.wait(0.6)
-		script.Parent.Parent.Visible = false
-		ready = true
-	end)
-end
-
-coroutine.wrap(IYZNC_fake_script)()
-coroutine.wrap(VTCPJCE_fake_script)()
-coroutine.wrap(EVNVY_fake_script)()
-coroutine.wrap(RRLK_fake_script)()
-coroutine.wrap(ZQMFNJ_fake_script)()
-coroutine.wrap(VPRJWSR_fake_script)()
-coroutine.wrap(KWGZIM_fake_script)()
-coroutine.wrap(GBKZNJA_fake_script)()
-coroutine.wrap(JFABAU_fake_script)()
-coroutine.wrap(SNFDSE_fake_script)()
-coroutine.wrap(CTLYMYG_fake_script)()
-coroutine.wrap(NNIQC_fake_script)()
-coroutine.wrap(DHXVQ_fake_script)()
-coroutine.wrap(BIISYS_fake_script)()
-coroutine.wrap(WVQS_fake_script)()
-coroutine.wrap(QILIXAR_fake_script)()
+coroutine.wrap(TNUH_fake_script)()
+coroutine.wrap(BILF_fake_script)()
+coroutine.wrap(WXYNGOS_fake_script)()
+coroutine.wrap(WUAUKU_fake_script)()
+coroutine.wrap(JDPRURH_fake_script)()
+coroutine.wrap(KYALNYD_fake_script)()
+coroutine.wrap(XHSAU_fake_script)()
+coroutine.wrap(VVIBB_fake_script)()
+coroutine.wrap(WFYLTB_fake_script)()
+coroutine.wrap(AJDP_fake_script)()
+coroutine.wrap(LMQTO_fake_script)()
+coroutine.wrap(MGVWMZA_fake_script)()
+coroutine.wrap(AFSHYE_fake_script)()
+coroutine.wrap(SYRG_fake_script)()
+coroutine.wrap(BKHQP_fake_script)()
+coroutine.wrap(WRIHDU_fake_script)()
